@@ -1,0 +1,1 @@
+export const imageUrl = (value?: string | null) => (value ? value : null);

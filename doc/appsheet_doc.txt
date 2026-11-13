@@ -1,0 +1,5478 @@
+Generated at:
+10/22/2026, 3:03:34 PM
+Meraki
+Manage inventory levels, stock value and vendor details
+Data Summary
+12 Tables
+114 Columns
+0 Slices
+UX Summary 23 Views4 Format Rules
+Behavior Summary 37 Actions0 Workflow Rules
+Short Name Meraki
+Short Description Manage inventory levels, stock value and vendor details
+Version 1.000228
+Default app folder /appsheet/data/Meraki-363574449
+Function Inventory Management
+Runnable? Yes
+Deployable? No
+Personal use only? No
+Purpose Organize inventory items by categories, manage vendor details,import/export item details, and monitor stock levels by value.
+Design Details Level: Intermediate
+Meraki-363574449 Documentation
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 1/141
+Data
+Tables
+Table name _Per User Settings
+Table name _Per User Settings
+Visible? NEVER
+Shared? No
+Data locale en-US
+Schema _Per User Settings_Schema
+Are updates allowed? UPDATES_ONLY
+Source Path _Per User Settings
+Data Source native
+Store for image and file
+capture _Default
+Column Order List _RowNumber
+Partitioned across many
+files/sources? No
+Partitioned across many
+worksheets? No
+Table name Mercadillos
+Table name Mercadillos
+Visible? ALWAYS
+Shared? Yes
+Data locale es-ES
+Schema Mercadillos_Schema
+Are updates allowed? ALL_CHANGES
+Source Path appsheet db
+Worksheet Name/Qualifier Mercadillos
+Data Source google
+Store for image and file
+capture _Default
+Column Order List _RowNumber
+Partitioned across many
+files/sources? No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 2/141
+Partitioned across many
+worksheets? No
+Table name Productos
+Table name Productos
+Visible? ALWAYS
+Shared? Yes
+Data locale es-ES
+Schema Productos_Schema
+Are updates allowed? ALL_CHANGES
+Source Path appsheet db
+Worksheet Name/Qualifier Productos
+Data Source google
+Store for image and file
+capture _Default
+Column Order List _RowNumber
+Partitioned across many
+files/sources? No
+Partitioned across many
+worksheets? No
+Table name Ventas
+Table name Ventas
+Visible? ALWAYS
+Shared? Yes
+Data locale es-ES
+Schema Ventas_Schema
+Are updates allowed? ALL_CHANGES
+Source Path appsheet db
+Worksheet Name/Qualifier Ventas
+Data Source google
+Store for image and file
+capture _Default
+Column Order List _RowNumber
+Partitioned across many
+files/sources? No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 3/141
+Partitioned across many
+worksheets? No
+Table name Inventario
+Table name Inventario
+Visible? ALWAYS
+Shared? Yes
+Data locale es-ES
+Schema Inventario_Schema
+Are updates allowed? ALL_CHANGES
+Source Path appsheet db
+Worksheet Name/Qualifier Inventario
+Data Source google
+Store for image and file
+capture _Default
+Column Order List _RowNumber
+Partitioned across many
+files/sources? No
+Partitioned across many
+worksheets? No
+Table name Compras
+Table name Compras
+Visible? ALWAYS
+Shared? Yes
+Data locale es-ES
+Schema Compras_Schema
+Are updates allowed? ALL_CHANGES
+Source Path appsheet db
+Worksheet Name/Qualifier Compras
+Data Source google
+Store for image and file
+capture _Default
+Column Order List _RowNumber
+Partitioned across many
+files/sources? No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 4/141
+Partitioned across many
+worksheets? No
+Table name ComponentesProducto
+Table name ComponentesProducto
+Visible? ALWAYS
+Shared? Yes
+Data locale es-ES
+Schema ComponentesProducto_Schema
+Are updates allowed? ALL_CHANGES
+Source Path appsheet db
+Worksheet Name/Qualifier ComponentesProducto
+Data Source google
+Store for image and file
+capture _Default
+Column Order List _RowNumber
+Partitioned across many
+files/sources? No
+Partitioned across many
+worksheets? No
+Table name ResumenVentas
+Table name ResumenVentas
+Visible? ALWAYS
+Shared? Yes
+Data locale es-ES
+Schema ResumenVentas_Schema
+Are updates allowed? ALL_CHANGES
+Source Path appsheet db
+Worksheet Name/Qualifier ResumenVentas
+Data Source google
+Store for image and file
+capture _Default
+Column Order List _RowNumber
+Partitioned across many
+files/sources? No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 5/141
+Partitioned across many
+worksheets? No
+Table name Process for Gestionar entrada ventas Process Table
+Table name Process for Gestionar entrada ventas Process Table
+Visible? NEVER
+Shared? Yes
+Schema Process for Gestionar entrada ventas Process Table_Schema
+Are updates allowed? READ_ONLY
+Source Path
+/ProcessStateTables/cb94682e-c38f-4d67-8110-
+0df054f3cf45/45b651d6-ff0c-4e1e-994a-0521d1b7932f/State
+Table
+Data Source native
+Store for image and file
+capture _Default
+Column Order List _RowNumber
+Partitioned across many
+files/sources? No
+Partitioned across many
+worksheets? No
+Table name Añade entrada a ResumenVentas Output
+Table name Añade entrada a ResumenVentas Output
+Visible? NEVER
+Shared? Yes
+Schema Añade entrada a ResumenVentas Output_Schema
+Are updates allowed? READ_ONLY
+Source Path
+/ProcessStateTables/cb94682e-c38f-4d67-8110-
+0df054f3cf45/45b651d6-ff0c-4e1e-994a-
+0521d1b7932f/StepOutput_Añade entrada a ResumenVentas
+Data Source native
+Store for image and file
+capture _Default
+Column Order List _RowNumber
+Partitioned across many
+files/sources? No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 6/141
+Partitioned across many
+worksheets? No
+Table name Agrupar ventas del mismo producto Output
+Table name Agrupar ventas del mismo producto Output
+Visible? NEVER
+Shared? Yes
+Schema Agrupar ventas del mismo producto Output_Schema
+Are updates allowed? READ_ONLY
+Source Path
+/ProcessStateTables/cb94682e-c38f-4d67-8110-
+0df054f3cf45/45b651d6-ff0c-4e1e-994a-
+0521d1b7932f/StepOutput_Agrupar ventas del mismo
+producto
+Data Source native
+Store for image and file
+capture _Default
+Column Order List _RowNumber
+Partitioned across many
+files/sources? No
+Partitioned across many
+worksheets? No
+Table name Eliminar venta previa Output
+Table name Eliminar venta previa Output
+Visible? NEVER
+Shared? Yes
+Schema Eliminar venta previa Output_Schema
+Are updates allowed? READ_ONLY
+Source Path
+/ProcessStateTables/cb94682e-c38f-4d67-8110-
+0df054f3cf45/45b651d6-ff0c-4e1e-994a-
+0521d1b7932f/StepOutput_Eliminar venta previa
+Data Source native
+Store for image and file
+capture _Default
+Column Order List _RowNumber
+Partitioned across many
+files/sources? No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 7/141
+Partitioned across many
+worksheets? No
+Columns
+Schema Name _Per User Settings_Schema
+Schema Name _Per User Settings_Schema
+Visible? ALWAYS
+Column 1: _RowNumber
+Column name _RowNumber
+Visible? ALWAYS
+Type Number
+Type Qualifier
+{"MaxValue":null,"MinValue":null,"StepValue":null,"NumericDigits"
+:null,"ShowThousandsSeparator":true,"NumberDisplayMode":"Au
+to","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"R
+equired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Value
+s":null}
+Read-Only Yes
+Hidden Yes
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? Yes
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName en-US
+Searchable No
+Scannable No
+Sensitive data No
+Column 2: _EMAIL
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 8/141
+Column name _EMAIL
+Visible? ALWAYS
+Type Email
+Type Qualifier
+{"Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"Req
+uired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Values":
+null}
+App formula USEREMAIL()
+Read-Only No
+Hidden Yes
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName en-US
+Searchable No
+Scannable No
+Sensitive data No
+Column 3: _NAME
+Column name _NAME
+Visible? ALWAYS
+Type Name
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+App formula USERNAME()
+Read-Only No
+Hidden Yes
+Label No
+Formula version 0
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 9/141
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName en-US
+Searchable No
+Scannable No
+Sensitive data No
+Column 4: _LOCATION
+Column name _LOCATION
+Visible? ALWAYS
+Type LatLong
+Type Qualifier
+{"RealTime":false,"PublishIfRowKey":null,"KMLFileUrl":null,"Valid_
+If":null,"Error_Message_If_Invalid":null,"Show_If":null,"Required_If
+":null,"Editable_If":null,"Reset_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden Yes
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName en-US
+Searchable No
+Scannable No
+Sensitive data No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 10/141
+Column 5: Options Heading
+Column name Options Heading
+Visible? ALWAYS
+Type Show
+Type Qualifier
+{"Category":"Text","Content":"\"These options control the
+content and behavior of the
+app\"","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":nul
+l,"Required_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Va
+lues":null}
+Read-Only Yes
+Hidden Yes
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName en-US
+Searchable No
+Scannable No
+Sensitive data No
+Column 6: Option 1
+Column name Option 1
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden Yes
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 11/141
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName en-US
+Searchable No
+Scannable No
+Sensitive data No
+Column 7: Option 2
+Column name Option 2
+Visible? ALWAYS
+Type Number
+Type Qualifier
+{"MaxValue":null,"MinValue":null,"StepValue":null,"NumericDigits"
+:null,"ShowThousandsSeparator":true,"NumberDisplayMode":"Au
+to","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"R
+equired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Value
+s":null}
+Read-Only No
+Hidden Yes
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName en-US
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 12/141
+Searchable No
+Scannable No
+Sensitive data No
+Column 8: Country Option
+Column name Country Option
+Visible? ALWAYS
+Type Enum
+Type Qualifier
+{"EnumValues":
+["Australia","Brazil","Canada"],"AllowOtherValues":false,"AutoCom
+pleteOtherValues":true,"BaseType":"Text","BaseTypeQualifier":"
+{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\
+"Plain
+Text\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Messa
+ge_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable
+_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}","EnumInpu
+tMode":"Auto","Valid_If":null,"Error_Message_If_Invalid":null,"Sho
+w_If":null,"Required_If":null,"Editable_If":null,"Reset_If":null,"Sugg
+ested_Values":null}
+Read-Only No
+Hidden Yes
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName en-US
+Searchable No
+Scannable No
+Sensitive data No
+Column 9: Language Option
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 13/141
+Column name Language Option
+Visible? ALWAYS
+Type Enum
+Type Qualifier
+{"EnumValues":
+["English","French","Tamil"],"AllowOtherValues":false,"AutoComple
+teOtherValues":true,"BaseType":"Text","BaseTypeQualifier":"
+{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\
+"Plain
+Text\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Messa
+ge_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable
+_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}","EnumInpu
+tMode":"Auto","Valid_If":null,"Error_Message_If_Invalid":null,"Sho
+w_If":null,"Required_If":null,"Editable_If":null,"Reset_If":null,"Sugg
+ested_Values":null}
+Read-Only No
+Hidden Yes
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName en-US
+Searchable No
+Scannable No
+Sensitive data No
+Column 10: Option 5
+Column name Option 5
+Visible? ALWAYS
+Type Text
+Type Qualifier {"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 14/141
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden Yes
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName en-US
+Searchable No
+Scannable No
+Sensitive data No
+Column 11: Option 6
+Column name Option 6
+Visible? ALWAYS
+Type Number
+Type Qualifier
+{"MaxValue":null,"MinValue":null,"StepValue":null,"NumericDigits"
+:null,"ShowThousandsSeparator":true,"NumberDisplayMode":"Au
+to","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"R
+equired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Value
+s":null}
+Read-Only No
+Hidden Yes
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 15/141
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName en-US
+Searchable No
+Scannable No
+Sensitive data No
+Column 12: Option 7
+Column name Option 7
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden Yes
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName en-US
+Searchable No
+Scannable No
+Sensitive data No
+Column 13: Option 8
+Column name Option 8
+Visible? ALWAYS
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 16/141
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden Yes
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName en-US
+Searchable No
+Scannable No
+Sensitive data No
+Column 14: Option 9
+Column name Option 9
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden Yes
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 17/141
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName en-US
+Searchable No
+Scannable No
+Sensitive data No
+Column 15: _THISUSER
+Column name _THISUSER
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden Yes
+Label No
+Formula version 0
+Reset on edit? No
+Initial value onlyvalue
+System Defined? No
+Key Yes
+Part of Key? Yes
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName en-US
+Searchable No
+Scannable No
+Sensitive data No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 18/141
+Schema Name Mercadillos_Schema
+Schema Name Mercadillos_Schema
+Visible? ALWAYS
+Column 1: _RowNumber
+Column name _RowNumber
+Visible? ALWAYS
+Description Number of this row
+Type Number
+Type Qualifier
+{"MaxValue":null,"MinValue":null,"StepValue":null,"NumericDigits"
+:null,"ShowThousandsSeparator":true,"NumberDisplayMode":"Au
+to","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"R
+equired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Value
+s":null}
+Read-Only Yes
+Hidden Yes
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? Yes
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable No
+Scannable No
+Sensitive data No
+Column 2: idMercadillo
+Column name idMercadillo
+Visible? ALWAYS
+Type Number
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 19/141
+Type Qualifier
+{"MaxValue":null,"MinValue":null,"StepValue":null,"NumericDigits"
+:null,"ShowThousandsSeparator":true,"NumberDisplayMode":"Au
+to","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"R
+equired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Value
+s":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+Initial value =UNIQUEID()
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable No
+Scannable No
+Sensitive data No
+Column 3: Nombre
+Column name Nombre
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label Yes
+Formula version 0
+Reset on edit? No
+System Defined? No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 20/141
+Key Yes
+Part of Key? Yes
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 4: Fecha
+Column name Fecha
+Visible? ALWAYS
+Type Date
+Type Qualifier
+{"UseLongDateFormat":false,"Valid_If":null,"Error_Message_If_In
+valid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Reset
+_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+Initial value TODAY()
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 5: CosteInscripcion
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 21/141
+Column name CosteInscripcion
+Visible? ALWAYS
+Display name =Coste de inscripcion
+Type Price
+Type Qualifier
+{"CurrencySymbol":"€","MaxValue":null,"MinValue":null,"StepValu
+e":null,"DecimalDigits":2,"NumericDigits":null,"ShowThousandsS
+eparator":true,"NumberDisplayMode":"Auto","Valid_If":null,"Error_
+Message_If_Invalid":null,"Show_If":null,"Required_If":null,"Editabl
+e_If":null,"Reset_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 6: Related Ventas
+Column name Related Ventas
+Visible? ALWAYS
+Description Ventas entries that reference this entry in the Mercadillocolumn
+Display name =Productos vendidos
+Type List
+Type Qualifier {"ElementType":"Ref","ElementTypeQualifier":"
+{\"ReferencedTableName\":\"Ventas\",\"ReferencedRootTableN
+ame\":\"Ventas\",\"ReferencedType\":\"Text\",\"ReferencedType
+Qualifier\":\"
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 22/141
+{\\\"MaxLength\\\":null,\\\"MinLength\\\":null,\\\"LongTextFor
+matting\\\":\\\"Plain
+Text\\\",\\\"IsMulticolumnKey\\\":false,\\\"Valid_If\\\":null,\\\"Er
+ror_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required
+_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Sugges
+ted_Values\\\":null}\",\"ReferencedKeyColumn\":\"idVenta\",\"Is
+APartOf\":false,\"RelationshipName\":null,\"InputMode\":\"Auto
+\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":n
+ull,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Sugg
+ested_Values\":null}","ItemSeparator":" ,
+","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"Req
+uired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Values":
+null}
+App formula =REF_ROWS("Ventas", "Mercadillo")
+Read-Only Yes
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? Yes
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? Yes
+LocaleName es-ES
+Searchable Yes
+Scannable No
+NFC Scannable No
+Sensitive data No
+Column 7: UnidadesVendidas
+Column name UnidadesVendidas
+Visible? ALWAYS
+Type Number
+Type Qualifier {"MaxValue":null,"MinValue":1,"StepValue":null,"NumericDigits":n
+ull,"ShowThousandsSeparator":true,"NumberDisplayMode":"Aut
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 23/141
+o","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"Re
+quired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Values
+":null}
+App formula =SUM( SELECT( Ventas[Cantidad], [Mercadillo] = [_THISROW].[Nombre] ) )
+Read-Only Yes
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? Yes
+LocaleName es-ES
+Searchable No
+Scannable No
+Sensitive data No
+Column 8: TotalVentas
+Column name TotalVentas
+Visible? ALWAYS
+Type Price
+Type Qualifier
+{"CurrencySymbol":"€","MaxValue":null,"MinValue":null,"StepValu
+e":null,"DecimalDigits":2,"NumericDigits":null,"ShowThousandsS
+eparator":true,"NumberDisplayMode":"Auto","Valid_If":null,"Error_
+Message_If_Invalid":null,"Show_If":null,"Required_If":null,"Editabl
+e_If":null,"Reset_If":null,"Suggested_Values":null}
+App formula =SUM( SELECT( Ventas[Importe], [Mercadillo] = [_THISROW].[Nombre] ) )
+Read-Only Yes
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 24/141
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? Yes
+LocaleName es-ES
+Searchable No
+Scannable No
+Sensitive data No
+Column 9: TotalBeneficio
+Column name TotalBeneficio
+Visible? ALWAYS
+Display name =Beneficio total
+Type Price
+Type Qualifier
+{"CurrencySymbol":"€","MaxValue":null,"MinValue":null,"StepValu
+e":null,"DecimalDigits":2,"NumericDigits":null,"ShowThousandsS
+eparator":true,"NumberDisplayMode":"Auto","Valid_If":null,"Error_
+Message_If_Invalid":null,"Show_If":null,"Required_If":null,"Editabl
+e_If":null,"Reset_If":null,"Suggested_Values":null}
+App formula =[TotalVentas] - [CosteInscripcion]
+Read-Only Yes
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? Yes
+LocaleName es-ES
+Searchable No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 25/141
+Scannable No
+Sensitive data No
+Column 10: Related ResumenVentas
+Column name Related ResumenVentas
+Visible? ALWAYS
+Description ResumenVentas entries that reference this entry in theMercadillo column
+Type List
+Type Qualifier
+{"ElementType":"Ref","ElementTypeQualifier":"
+{\"ReferencedTableName\":\"ResumenVentas\",\"ReferencedRo
+otTableName\":\"ResumenVentas\",\"ReferencedType\":\"Text\"
+,\"ReferencedTypeQualifier\":\"
+{\\\"MaxLength\\\":null,\\\"MinLength\\\":null,\\\"LongTextFor
+matting\\\":\\\"Plain
+Text\\\",\\\"IsMulticolumnKey\\\":false,\\\"Valid_If\\\":null,\\\"Er
+ror_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required
+_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Sugges
+ted_Values\\\":null}\",\"ReferencedKeyColumn\":\"idResumenVe
+nta\",\"IsAPartOf\":false,\"RelationshipName\":null,\"InputMode
+\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Sh
+ow_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":nu
+ll,\"Suggested_Values\":null}","ItemSeparator":" ,
+","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"Req
+uired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Values":
+null}
+App formula REF_ROWS("ResumenVentas", "Mercadillo")
+Read-Only Yes
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? Yes
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? Yes
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 26/141
+LocaleName es-ES
+Searchable Yes
+Scannable No
+NFC Scannable No
+Sensitive data No
+Schema Name Productos_Schema
+Schema Name Productos_Schema
+Visible? ALWAYS
+Column 1: _RowNumber
+Column name _RowNumber
+Visible? ALWAYS
+Description Number of this row
+Type Number
+Type Qualifier
+{"MaxValue":null,"MinValue":null,"StepValue":null,"NumericDigits"
+:null,"ShowThousandsSeparator":true,"NumberDisplayMode":"Au
+to","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"R
+equired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Value
+s":null}
+Read-Only Yes
+Hidden Yes
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? Yes
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable No
+Scannable No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 27/141
+Sensitive data No
+Column 2: idProducto
+Column name idProducto
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key Yes
+Part of Key? Yes
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable No
+Scannable No
+Sensitive data No
+Column 3: Nombre
+Column name Nombre
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 28/141
+Hidden No
+Label Yes
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 4: Peso
+Column name Peso
+Visible? ALWAYS
+Type Number
+Type Qualifier
+{"MaxValue":null,"MinValue":null,"StepValue":null,"NumericDigits"
+:null,"ShowThousandsSeparator":true,"NumberDisplayMode":"Au
+to","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"R
+equired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Value
+s":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 29/141
+LocaleName es-ES
+Searchable No
+Scannable No
+Sensitive data No
+Column 5: Tipo
+Column name Tipo
+Visible? ALWAYS
+Type Enum
+Type Qualifier
+{"EnumValues":["Jabon","Cera alto","Resina","Cera
+bajo"],"AllowOtherValues":true,"AutoCompleteOtherValues":true,"
+BaseType":"Text","BaseTypeQualifier":"
+{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\
+"Plain
+Text\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Messa
+ge_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable
+_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}","EnumInpu
+tMode":"Auto","Valid_If":null,"Error_Message_If_Invalid":null,"Sho
+w_If":null,"Required_If":null,"Editable_If":null,"Reset_If":null,"Sugg
+ested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 6: Precio
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 30/141
+Column name Precio
+Visible? ALWAYS
+Type Price
+Type Qualifier
+{"CurrencySymbol":"$","MaxValue":null,"MinValue":null,"StepValu
+e":null,"DecimalDigits":2,"NumericDigits":null,"ShowThousandsS
+eparator":true,"NumberDisplayMode":"Auto","Valid_If":null,"Error_
+Message_If_Invalid":null,"Show_If":null,"Required_If":null,"Editabl
+e_If":null,"Reset_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable No
+Scannable No
+Sensitive data No
+Column 7: Imagen
+Column name Imagen
+Visible? ALWAYS
+Type Image
+Type Qualifier
+{"AllowDrawing":false,"FolderLocation":"=CONCATENATE(\"/Ima
+genes/\",
+[Nombre])","Valid_If":null,"Error_Message_If_Invalid":null,"Show_I
+f":null,"Required_If":null,"Editable_If":null,"Reset_If":null,"Suggeste
+d_Values":null}
+Read-Only No
+Hidden No
+Label No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 31/141
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 8: Related Ventas
+Column name Related Ventas
+Visible? ALWAYS
+Description Ventas entries that reference this entry in the Producto column
+Type List
+Type Qualifier
+{"ElementType":"Ref","ElementTypeQualifier":"
+{\"ReferencedTableName\":\"Ventas\",\"ReferencedRootTableN
+ame\":\"Ventas\",\"ReferencedType\":\"Text\",\"ReferencedType
+Qualifier\":\"
+{\\\"MaxLength\\\":null,\\\"MinLength\\\":null,\\\"LongTextFor
+matting\\\":\\\"Plain
+Text\\\",\\\"IsMulticolumnKey\\\":false,\\\"Valid_If\\\":null,\\\"Er
+ror_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required
+_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Sugges
+ted_Values\\\":null}\",\"ReferencedKeyColumn\":\"idVenta\",\"Is
+APartOf\":false,\"RelationshipName\":null,\"InputMode\":\"Auto
+\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":n
+ull,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Sugg
+ested_Values\":null}","ItemSeparator":" ,
+","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"Req
+uired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Values":
+null}
+App formula REF_ROWS("Ventas", "Producto")
+Read-Only Yes
+Hidden No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 32/141
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? Yes
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? Yes
+LocaleName es-ES
+Searchable Yes
+Scannable No
+NFC Scannable No
+Sensitive data No
+Column 9: Related ComponentesProductos
+Column name Related ComponentesProductos
+Visible? ALWAYS
+Description ComponentesProducto entries that reference this entry in theProducto column
+Type List
+Type Qualifier
+{"ElementType":"Ref","ElementTypeQualifier":"
+{\"ReferencedTableName\":\"ComponentesProducto\",\"Refere
+ncedRootTableName\":\"ComponentesProducto\",\"Referenced
+Type\":\"Number\",\"ReferencedTypeQualifier\":\"
+{\\\"MaxValue\\\":null,\\\"MinValue\\\":null,\\\"StepValue\\\":nu
+ll,\\\"NumericDigits\\\":null,\\\"ShowThousandsSeparator\\\":tr
+ue,\\\"NumberDisplayMode\\\":\\\"Auto\\\",\\\"Valid_If\\\":null,\
+\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Req
+uired_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Su
+ggested_Values\\\":null}\",\"ReferencedKeyColumn\":\"idComp
+onente\",\"IsAPartOf\":false,\"RelationshipName\":null,\"InputM
+ode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\
+"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\
+":null,\"Suggested_Values\":null}","ItemSeparator":" ,
+","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"Req
+uired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Values":
+null}
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 33/141
+App formula REF_ROWS("ComponentesProducto", "Producto")
+Read-Only Yes
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? Yes
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? Yes
+LocaleName es-ES
+Searchable Yes
+Scannable No
+NFC Scannable No
+Sensitive data No
+Column 10: Related ResumenVentas
+Column name Related ResumenVentas
+Visible? ALWAYS
+Description ResumenVentas entries that reference this entry in theProducto column
+Type List
+Type Qualifier {"ElementType":"Ref","ElementTypeQualifier":"
+{\"ReferencedTableName\":\"ResumenVentas\",\"ReferencedRo
+otTableName\":\"ResumenVentas\",\"ReferencedType\":\"Text\"
+,\"ReferencedTypeQualifier\":\"
+{\\\"MaxLength\\\":null,\\\"MinLength\\\":null,\\\"LongTextFor
+matting\\\":\\\"Plain
+Text\\\",\\\"IsMulticolumnKey\\\":false,\\\"Valid_If\\\":null,\\\"Er
+ror_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required
+_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Sugges
+ted_Values\\\":null}\",\"ReferencedKeyColumn\":\"idResumenVe
+nta\",\"IsAPartOf\":false,\"RelationshipName\":null,\"InputMode
+\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Sh
+ow_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":nu
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 34/141
+ll,\"Suggested_Values\":null}","ItemSeparator":" ,
+","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"Req
+uired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Values":
+null}
+App formula REF_ROWS("ResumenVentas", "Producto")
+Read-Only Yes
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? Yes
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? Yes
+LocaleName es-ES
+Searchable Yes
+Scannable No
+NFC Scannable No
+Sensitive data No
+Schema Name Ventas_Schema
+Schema Name Ventas_Schema
+Visible? ALWAYS
+Column 1: _RowNumber
+Column name _RowNumber
+Visible? ALWAYS
+Description Number of this row
+Type Number
+Type Qualifier {"MaxValue":null,"MinValue":null,"StepValue":null,"NumericDigits"
+:null,"ShowThousandsSeparator":true,"NumberDisplayMode":"Au
+to","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"R
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 35/141
+equired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Value
+s":null}
+Read-Only Yes
+Hidden Yes
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? Yes
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable No
+Scannable No
+Sensitive data No
+Column 2: idVenta
+Column name idVenta
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label Yes
+Formula version 0
+Reset on edit? No
+Initial value UNIQUEID()
+System Defined? No
+Key Yes
+Part of Key? Yes
+Fixed definition? No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 36/141
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 3: Mercadillo
+Column name Mercadillo
+Visible? ALWAYS
+Type Ref
+Type Qualifier
+{"ReferencedTableName":"Mercadillos","ReferencedRootTableN
+ame":"Mercadillos","ReferencedType":"Text","ReferencedTypeQu
+alifier":"
+{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\
+"Plain
+Text\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Messa
+ge_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable
+_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}","Reference
+dKeyColumn":"Nombre","IsAPartOf":true,"RelationshipName":null
+,"InputMode":"Auto","Valid_If":null,"Error_Message_If_Invalid":null,
+"Show_If":null,"Required_If":null,"Editable_If":null,"Reset_If":null,"S
+uggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 37/141
+Scannable No
+Sensitive data No
+Column 4: Producto
+Column name Producto
+Visible? ALWAYS
+Type Ref
+Type Qualifier
+{"ReferencedTableName":"Productos","ReferencedRootTableNa
+me":"Productos","ReferencedType":"Text","ReferencedTypeQualif
+ier":"
+{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\
+"Plain
+Text\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Messa
+ge_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable
+_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}","Reference
+dKeyColumn":"idProducto","IsAPartOf":false,"RelationshipName"
+:null,"InputMode":"Auto","Valid_If":null,"Error_Message_If_Invalid":
+null,"Show_If":"","Required_If":null,"Editable_If":"=ISBLANK([_THIS
+ROW_BEFORE].
+[Producto])","Reset_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable No
+Scannable No
+Sensitive data No
+Column 5: Cantidad
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 38/141
+Column name Cantidad
+Visible? ALWAYS
+Type Number
+Type Qualifier
+{"MaxValue":null,"MinValue":1,"StepValue":null,"NumericDigits":n
+ull,"ShowThousandsSeparator":true,"NumberDisplayMode":"Aut
+o","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"Re
+quired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Values
+":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+Initial value =1
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable No
+Scannable No
+Sensitive data No
+Column 6: PrecioVenta
+Column name PrecioVenta
+Visible? ALWAYS
+Type Price
+Type Qualifier
+{"CurrencySymbol":"€","MaxValue":null,"MinValue":null,"StepValu
+e":null,"DecimalDigits":2,"NumericDigits":null,"ShowThousandsS
+eparator":true,"NumberDisplayMode":"Auto","Valid_If":null,"Error_
+Message_If_Invalid":null,"Show_If":null,"Required_If":null,"Editabl
+e_If":"=ISNOTBLANK([Producto])","Reset_If":null,"Suggested_Val
+ues":null}
+Read-Only No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 39/141
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+Initial value =[Producto].[Precio]
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable No
+Scannable No
+Sensitive data No
+Column 7: Importe
+Column name Importe
+Visible? ALWAYS
+Type Price
+Type Qualifier
+{"CurrencySymbol":"€","MaxValue":null,"MinValue":null,"StepValu
+e":null,"DecimalDigits":2,"NumericDigits":null,"ShowThousandsS
+eparator":true,"NumberDisplayMode":"Auto","Valid_If":null,"Error_
+Message_If_Invalid":null,"Show_If":null,"Required_If":null,"Editabl
+e_If":null,"Reset_If":null,"Suggested_Values":null}
+App formula =[Cantidad] * [PrecioVenta]
+Read-Only Yes
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 40/141
+Editable Initial
+Value? Yes
+Virtual? Yes
+LocaleName es-ES
+Searchable No
+Scannable No
+Sensitive data No
+Column 8: ImagenProductoVendido
+Column name ImagenProductoVendido
+Visible? ALWAYS
+Type Image
+Type Qualifier
+{"AllowDrawing":false,"FolderLocation":"=CONCATENATE(\"/Ima
+genes/\", [Producto].
+[Nombre])","Valid_If":null,"Error_Message_If_Invalid":null,"Show_I
+f":null,"Required_If":null,"Editable_If":null,"Reset_If":null,"Suggeste
+d_Values":null}
+App formula =[Producto].[Imagen]
+Read-Only Yes
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? Yes
+LocaleName es-ES
+Searchable No
+Scannable No
+Sensitive data No
+Column 9: EditFlag
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 41/141
+Column name EditFlag
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+App formula ="TEMP"
+Read-Only Yes
+Hidden Yes
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? Yes
+LocaleName es-ES
+Searchable No
+Scannable No
+Sensitive data No
+Schema Name Inventario_Schema
+Schema Name Inventario_Schema
+Visible? ALWAYS
+Column 1: _RowNumber
+Column name _RowNumber
+Visible? ALWAYS
+Description Number of this row
+Type Number
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 42/141
+Type Qualifier
+{"MaxValue":null,"MinValue":null,"StepValue":null,"NumericDigits"
+:null,"ShowThousandsSeparator":true,"NumberDisplayMode":"Au
+to","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"R
+equired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Value
+s":null}
+Read-Only Yes
+Hidden Yes
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? Yes
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable No
+Scannable No
+Sensitive data No
+Column 2: idObjeto
+Column name idObjeto
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+Initial value =UNIQUEID()
+System Defined? No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 43/141
+Key Yes
+Part of Key? Yes
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable No
+Scannable No
+Sensitive data No
+Column 3: Nombre
+Column name Nombre
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label Yes
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 4: StockInicial
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 44/141
+Column name StockInicial
+Visible? ALWAYS
+Type Number
+Type Qualifier
+{"MaxValue":null,"MinValue":null,"StepValue":null,"NumericDigits"
+:null,"ShowThousandsSeparator":true,"NumberDisplayMode":"Au
+to","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"R
+equired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Value
+s":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable No
+Scannable No
+Sensitive data No
+Column 5: PrecioUnidad
+Column name PrecioUnidad
+Visible? ALWAYS
+Type Price
+Type Qualifier
+{"CurrencySymbol":"$","MaxValue":null,"MinValue":null,"StepValu
+e":null,"DecimalDigits":2,"NumericDigits":null,"ShowThousandsS
+eparator":true,"NumberDisplayMode":"Auto","Valid_If":null,"Error_
+Message_If_Invalid":null,"Show_If":null,"Required_If":null,"Editabl
+e_If":null,"Reset_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 45/141
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable No
+Scannable No
+Sensitive data No
+Column 6: EnlaceCompra
+Column name EnlaceCompra
+Visible? ALWAYS
+Type Url
+Type Qualifier
+{"LaunchExternal":false,"IsHyperLink":false,"Valid_If":null,"Error_
+Message_If_Invalid":null,"Show_If":null,"Required_If":null,"Editabl
+e_If":null,"Reset_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 46/141
+Sensitive data No
+Column 7: Related Compras
+Column name Related Compras
+Visible? ALWAYS
+Description Compras entries that reference this entry in the Productocolumn
+Type List
+Type Qualifier
+{"ElementType":"Ref","ElementTypeQualifier":"
+{\"ReferencedTableName\":\"Compras\",\"ReferencedRootTable
+Name\":\"Compras\",\"ReferencedType\":\"Text\",\"ReferencedT
+ypeQualifier\":\"
+{\\\"MaxLength\\\":null,\\\"MinLength\\\":null,\\\"LongTextFor
+matting\\\":\\\"Plain
+Text\\\",\\\"IsMulticolumnKey\\\":false,\\\"Valid_If\\\":null,\\\"Er
+ror_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required
+_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Sugges
+ted_Values\\\":null}\",\"ReferencedKeyColumn\":\"idCompra\",\"
+IsAPartOf\":false,\"RelationshipName\":null,\"InputMode\":\"Aut
+o\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":
+null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Sug
+gested_Values\":null}","ItemSeparator":" ,
+","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"Req
+uired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Values":
+null}
+App formula REF_ROWS("Compras", "Producto")
+Read-Only Yes
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? Yes
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? Yes
+LocaleName es-ES
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 47/141
+Searchable Yes
+Scannable No
+NFC Scannable No
+Sensitive data No
+Column 8: Cantidad
+Column name Cantidad
+Visible? ALWAYS
+Type Number
+Type Qualifier
+{"MaxValue":null,"MinValue":null,"StepValue":null,"NumericDigits"
+:null,"ShowThousandsSeparator":true,"NumberDisplayMode":"Au
+to","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"R
+equired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Value
+s":null}
+App formula
+=[StockInicial] + SUM( SELECT( Compras[CantidadComprada],
+[Producto] = [_THISROW].[Nombre] ) ) - SUM( SELECT(
+ResumenVentas[Cantidad], [Producto] = [_THISROW].[Nombre] )
+)
+Read-Only Yes
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? Yes
+LocaleName es-ES
+Searchable No
+Scannable No
+Sensitive data No
+Column 9: Related ComponentesProductos
+Column name Related ComponentesProductos
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 48/141
+Visible? ALWAYS
+Description ComponentesProducto entries that reference this entry in theMaterial column
+Type List
+Type Qualifier
+{"ElementType":"Ref","ElementTypeQualifier":"
+{\"ReferencedTableName\":\"ComponentesProducto\",\"Refere
+ncedRootTableName\":\"ComponentesProducto\",\"Referenced
+Type\":\"Number\",\"ReferencedTypeQualifier\":\"
+{\\\"MaxValue\\\":null,\\\"MinValue\\\":null,\\\"StepValue\\\":nu
+ll,\\\"NumericDigits\\\":null,\\\"ShowThousandsSeparator\\\":tr
+ue,\\\"NumberDisplayMode\\\":\\\"Auto\\\",\\\"Valid_If\\\":null,\
+\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Req
+uired_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Su
+ggested_Values\\\":null}\",\"ReferencedKeyColumn\":\"idComp
+onente\",\"IsAPartOf\":false,\"RelationshipName\":null,\"InputM
+ode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\
+"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\
+":null,\"Suggested_Values\":null}","ItemSeparator":" ,
+","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"Req
+uired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Values":
+null}
+App formula REF_ROWS("ComponentesProducto", "Material")
+Read-Only Yes
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? Yes
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? Yes
+LocaleName es-ES
+Searchable Yes
+Scannable No
+NFC Scannable No
+Sensitive data No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 49/141
+Schema Name Compras_Schema
+Schema Name Compras_Schema
+Visible? ALWAYS
+Column 1: _RowNumber
+Column name _RowNumber
+Visible? ALWAYS
+Description Number of this row
+Type Number
+Type Qualifier
+{"MaxValue":null,"MinValue":null,"StepValue":null,"NumericDigits"
+:null,"ShowThousandsSeparator":true,"NumberDisplayMode":"Au
+to","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"R
+equired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Value
+s":null}
+Read-Only Yes
+Hidden Yes
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? Yes
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable No
+Scannable No
+Sensitive data No
+Column 2: idCompra
+Column name idCompra
+Visible? ALWAYS
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 50/141
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label Yes
+Formula version 0
+Reset on edit? No
+Initial value UNIQUEID()
+System Defined? No
+Key Yes
+Part of Key? Yes
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 3: Fecha
+Column name Fecha
+Visible? ALWAYS
+Type Date
+Type Qualifier
+{"UseLongDateFormat":false,"Valid_If":null,"Error_Message_If_In
+valid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Reset
+_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+Initial value =TODAY()
+System Defined? No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 51/141
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 4: Producto
+Column name Producto
+Visible? ALWAYS
+Type Ref
+Type Qualifier
+{"ReferencedTableName":"Inventario","ReferencedRootTableNa
+me":"Inventario","ReferencedType":"Text","ReferencedTypeQualifi
+er":"
+{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\
+"Plain
+Text\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Messa
+ge_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable
+_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}","Reference
+dKeyColumn":"idObjeto","IsAPartOf":false,"RelationshipName":nu
+ll,"InputMode":"Auto","Valid_If":null,"Error_Message_If_Invalid":nul
+l,"Show_If":null,"Required_If":null,"Editable_If":null,"Reset_If":null,"
+Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 52/141
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 5: CantidadComprada
+Column name CantidadComprada
+Visible? ALWAYS
+Type Number
+Type Qualifier
+{"MaxValue":null,"MinValue":null,"StepValue":null,"NumericDigits"
+:null,"ShowThousandsSeparator":true,"NumberDisplayMode":"Au
+to","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"R
+equired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Value
+s":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 6: PrecioUnidad
+Column name PrecioUnidad
+Visible? ALWAYS
+Type Price
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 53/141
+Type Qualifier
+{"CurrencySymbol":"$","MaxValue":null,"MinValue":null,"StepValu
+e":null,"DecimalDigits":2,"NumericDigits":null,"ShowThousandsS
+eparator":true,"NumberDisplayMode":"Auto","Valid_If":null,"Error_
+Message_If_Invalid":null,"Show_If":null,"Required_If":null,"Editabl
+e_If":null,"Reset_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 7: Proveedor
+Column name Proveedor
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 54/141
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+Sensitive data No
+Schema Name ComponentesProducto_Schema
+Schema Name ComponentesProducto_Schema
+Visible? ALWAYS
+Column 1: _RowNumber
+Column name _RowNumber
+Visible? ALWAYS
+Description Number of this row
+Type Number
+Type Qualifier
+{"MaxValue":null,"MinValue":null,"StepValue":null,"NumericDigits"
+:null,"ShowThousandsSeparator":true,"NumberDisplayMode":"Au
+to","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"R
+equired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Value
+s":null}
+Read-Only Yes
+Hidden Yes
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? Yes
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 55/141
+Virtual? No
+LocaleName es-ES
+Searchable No
+Scannable No
+Sensitive data No
+Column 2: idComponente
+Column name idComponente
+Visible? ALWAYS
+Type Number
+Type Qualifier
+{"MaxValue":null,"MinValue":null,"StepValue":null,"NumericDigits"
+:null,"ShowThousandsSeparator":true,"NumberDisplayMode":"Au
+to","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"R
+equired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Value
+s":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key Yes
+Part of Key? Yes
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable No
+Scannable No
+Sensitive data No
+Column 3: Producto
+Column name Producto
+Visible? ALWAYS
+Type Ref
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 56/141
+Type Qualifier
+{"ReferencedTableName":"Productos","ReferencedRootTableNa
+me":"Productos","ReferencedType":"Text","ReferencedTypeQualif
+ier":"
+{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\
+"Plain
+Text\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Messa
+ge_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable
+_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}","Reference
+dKeyColumn":"idProducto","IsAPartOf":false,"RelationshipName"
+:null,"InputMode":"Auto","Valid_If":null,"Error_Message_If_Invalid":
+null,"Show_If":null,"Required_If":null,"Editable_If":null,"Reset_If":n
+ull,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label Yes
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 4: Material
+Column name Material
+Visible? ALWAYS
+Type Ref
+Type Qualifier {"ReferencedTableName":"Inventario","ReferencedRootTableNa
+me":"Inventario","ReferencedType":"Text","ReferencedTypeQualifi
+er":"
+{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\
+"Plain
+Text\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Messa
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 57/141
+ge_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable
+_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}","Reference
+dKeyColumn":"idObjeto","IsAPartOf":false,"RelationshipName":nu
+ll,"InputMode":"Auto","Valid_If":null,"Error_Message_If_Invalid":nul
+l,"Show_If":null,"Required_If":null,"Editable_If":null,"Reset_If":null,"
+Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 5: CantidadPorUnidad
+Column name CantidadPorUnidad
+Visible? ALWAYS
+Type Number
+Type Qualifier
+{"MaxValue":null,"MinValue":null,"StepValue":null,"NumericDigits"
+:null,"ShowThousandsSeparator":true,"NumberDisplayMode":"Au
+to","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"R
+equired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Value
+s":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 58/141
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 6: ConsumoTotal
+Column name ConsumoTotal
+Visible? ALWAYS
+Type Number
+Type Qualifier
+{"MaxValue":null,"MinValue":null,"StepValue":null,"NumericDigits"
+:null,"ShowThousandsSeparator":true,"NumberDisplayMode":"Au
+to","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"R
+equired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Value
+s":null}
+App formula =[CantidadPorUnidad] * SUM( SELECT( Ventas[Cantidad],[Producto] = [_THISROW].[Producto] ) )
+Read-Only Yes
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? Yes
+LocaleName es-ES
+Searchable No
+Scannable No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 59/141
+Sensitive data No
+Schema Name ResumenVentas_Schema
+Schema Name ResumenVentas_Schema
+Visible? ALWAYS
+Column 1: _RowNumber
+Column name _RowNumber
+Visible? ALWAYS
+Description Number of this row
+Type Number
+Type Qualifier
+{"MaxValue":null,"MinValue":null,"StepValue":null,"NumericDigits"
+:null,"ShowThousandsSeparator":true,"NumberDisplayMode":"Au
+to","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"R
+equired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Value
+s":null}
+Read-Only Yes
+Hidden Yes
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? Yes
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable No
+Scannable No
+Sensitive data No
+Column 2: idResumenVenta
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 60/141
+Column name idResumenVenta
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+Initial value =UNIQUEID()
+System Defined? No
+Key Yes
+Part of Key? Yes
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 3: Mercadillo
+Column name Mercadillo
+Visible? ALWAYS
+Type Ref
+Type Qualifier {"ReferencedTableName":"Mercadillos","ReferencedRootTableN
+ame":"Mercadillos","ReferencedType":"Text","ReferencedTypeQu
+alifier":"
+{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\
+"Plain
+Text\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Messa
+ge_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable
+_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}","Reference
+dKeyColumn":"Nombre","IsAPartOf":false,"RelationshipName":nu
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 61/141
+ll,"InputMode":"Auto","Valid_If":null,"Error_Message_If_Invalid":nul
+l,"Show_If":null,"Required_If":null,"Editable_If":null,"Reset_If":null,"
+Suggested_Values":null}
+Read-Only No
+Hidden No
+Label Yes
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 4: Producto
+Column name Producto
+Visible? ALWAYS
+Type Ref
+Type Qualifier
+{"ReferencedTableName":"Productos","ReferencedRootTableNa
+me":"Productos","ReferencedType":"Text","ReferencedTypeQualif
+ier":"
+{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\
+"Plain
+Text\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Messa
+ge_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable
+_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}","Reference
+dKeyColumn":"idProducto","IsAPartOf":false,"RelationshipName"
+:null,"InputMode":"Auto","Valid_If":null,"Error_Message_If_Invalid":
+null,"Show_If":null,"Required_If":null,"Editable_If":null,"Reset_If":n
+ull,"Suggested_Values":null}
+Read-Only No
+Hidden No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 62/141
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 5: Cantidad
+Column name Cantidad
+Visible? ALWAYS
+Type Number
+Type Qualifier
+{"MaxValue":null,"MinValue":null,"StepValue":null,"NumericDigits"
+:null,"ShowThousandsSeparator":true,"NumberDisplayMode":"Au
+to","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"R
+equired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Value
+s":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 63/141
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 6: Ingreso
+Column name Ingreso
+Visible? ALWAYS
+Type Price
+Type Qualifier
+{"CurrencySymbol":"$","MaxValue":null,"MinValue":null,"StepValu
+e":null,"DecimalDigits":2,"NumericDigits":null,"ShowThousandsS
+eparator":true,"NumberDisplayMode":"Auto","Valid_If":null,"Error_
+Message_If_Invalid":null,"Show_If":null,"Required_If":null,"Editabl
+e_If":null,"Reset_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 7: Coste
+Column name Coste
+Visible? ALWAYS
+Type Price
+Type Qualifier {"CurrencySymbol":"$","MaxValue":null,"MinValue":null,"StepValu
+e":null,"DecimalDigits":2,"NumericDigits":null,"ShowThousandsS
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 64/141
+eparator":true,"NumberDisplayMode":"Auto","Valid_If":null,"Error_
+Message_If_Invalid":null,"Show_If":null,"Required_If":null,"Editabl
+e_If":null,"Reset_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 8: Beneficio
+Column name Beneficio
+Visible? ALWAYS
+Type Price
+Type Qualifier
+{"CurrencySymbol":"$","MaxValue":null,"MinValue":null,"StepValu
+e":null,"DecimalDigits":2,"NumericDigits":null,"ShowThousandsS
+eparator":true,"NumberDisplayMode":"Auto","Valid_If":null,"Error_
+Message_If_Invalid":null,"Show_If":null,"Required_If":null,"Editabl
+e_If":null,"Reset_If":null,"Suggested_Values":null}
+App formula =[Ingreso] - [Coste]
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 65/141
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+LocaleName es-ES
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 9: CantidadVendida
+Column name CantidadVendida
+Visible? ALWAYS
+Type Number
+Type Qualifier
+{"MaxValue":null,"MinValue":1,"StepValue":null,"NumericDigits":n
+ull,"ShowThousandsSeparator":true,"NumberDisplayMode":"Aut
+o","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"Re
+quired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Values
+":null}
+App formula
+=SUM( SELECT( Ventas[Cantidad], AND( [Mercadillo] =
+[_THISROW].[Mercadillo], [Producto] = [_THISROW].[Producto] )
+) )
+Read-Only Yes
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? Yes
+LocaleName es-ES
+Searchable No
+Scannable No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 66/141
+Sensitive data No
+Schema Name Process for Gestionar entrada ventas Process
+Table_Schema
+Schema Name Process for Gestionar entrada ventas Process Table_Schema
+Visible? NEVER
+Column 1: Instance Id
+Column name Instance Id
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key Yes
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 2: idVenta
+Column name idVenta
+Visible? ALWAYS
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 67/141
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 3: Mercadillo
+Column name Mercadillo
+Visible? ALWAYS
+Type Ref
+Type Qualifier
+{"ReferencedTableName":"Mercadillos","ReferencedRootTableN
+ame":"Mercadillos","ReferencedType":"Text","ReferencedTypeQu
+alifier":"
+{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\
+"Plain
+Text\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Messa
+ge_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable
+_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}","Reference
+dKeyColumn":"Nombre","IsAPartOf":true,"RelationshipName":null
+,"InputMode":"Auto","Valid_If":null,"Error_Message_If_Invalid":null,
+"Show_If":null,"Required_If":null,"Editable_If":null,"Reset_If":null,"S
+uggested_Values":null}
+Read-Only No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 68/141
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 4: Producto
+Column name Producto
+Visible? ALWAYS
+Type Ref
+Type Qualifier
+{"ReferencedTableName":"Productos","ReferencedRootTableNa
+me":"Productos","ReferencedType":"Text","ReferencedTypeQualif
+ier":"
+{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\
+"Plain
+Text\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Messa
+ge_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable
+_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}","Reference
+dKeyColumn":"idProducto","IsAPartOf":false,"RelationshipName"
+:null,"InputMode":"Auto","Valid_If":null,"Error_Message_If_Invalid":
+null,"Show_If":"","Required_If":null,"Editable_If":"=ISBLANK([_THIS
+ROW_BEFORE].
+[Producto])","Reset_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 69/141
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 5: Cantidad
+Column name Cantidad
+Visible? ALWAYS
+Type Number
+Type Qualifier
+{"MaxValue":null,"MinValue":1,"StepValue":null,"NumericDigits":n
+ull,"ShowThousandsSeparator":true,"NumberDisplayMode":"Aut
+o","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"Re
+quired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Values
+":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable No
+Scannable No
+Sensitive data No
+Column 6: PrecioVenta
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 70/141
+Column name PrecioVenta
+Visible? ALWAYS
+Type Price
+Type Qualifier
+{"CurrencySymbol":"€","MaxValue":null,"MinValue":null,"StepValu
+e":null,"DecimalDigits":2,"NumericDigits":null,"ShowThousandsS
+eparator":true,"NumberDisplayMode":"Auto","Valid_If":null,"Error_
+Message_If_Invalid":null,"Show_If":null,"Required_If":null,"Editabl
+e_If":"=ISNOTBLANK([Producto])","Reset_If":null,"Suggested_Val
+ues":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable No
+Scannable No
+Sensitive data No
+Column 7: Importe
+Column name Importe
+Visible? ALWAYS
+Type Price
+Type Qualifier
+{"CurrencySymbol":"€","MaxValue":null,"MinValue":null,"StepValu
+e":null,"DecimalDigits":2,"NumericDigits":null,"ShowThousandsS
+eparator":true,"NumberDisplayMode":"Auto","Valid_If":null,"Error_
+Message_If_Invalid":null,"Show_If":null,"Required_If":null,"Editabl
+e_If":null,"Reset_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 71/141
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable No
+Scannable No
+Sensitive data No
+Column 8: ImagenProductoVendido
+Column name ImagenProductoVendido
+Visible? ALWAYS
+Type Image
+Type Qualifier
+{"AllowDrawing":false,"FolderLocation":"=CONCATENATE(\"/Ima
+genes/\", [Producto].
+[Nombre])","Valid_If":null,"Error_Message_If_Invalid":null,"Show_I
+f":null,"Required_If":null,"Editable_If":null,"Reset_If":null,"Suggeste
+d_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable No
+Scannable No
+Sensitive data No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 72/141
+Column 9: EditFlag
+Column name EditFlag
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 10: Añade entrada a ResumenVentas
+Column name Añade entrada a ResumenVentas
+Visible? ALWAYS
+Type Ref
+Type Qualifier {"ReferencedTableName":"Añade entrada a ResumenVentas
+Output","ReferencedRootTableName":null,"ReferencedType":"Tex
+t","ReferencedTypeQualifier":"
+{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\
+"Plain
+Text\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Messa
+ge_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable
+_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}","Reference
+dKeyColumn":"Instance
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 73/141
+Id","IsAPartOf":false,"RelationshipName":null,"InputMode":"Auto",
+"Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"Req
+uired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Values":
+null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 11: Agrupar ventas del mismo producto
+Column name Agrupar ventas del mismo producto
+Visible? ALWAYS
+Type Ref
+Type Qualifier
+{"ReferencedTableName":"Agrupar ventas del mismo producto
+Output","ReferencedRootTableName":null,"ReferencedType":"Tex
+t","ReferencedTypeQualifier":"
+{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\
+"Plain
+Text\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Messa
+ge_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable
+_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}","Reference
+dKeyColumn":"Instance
+Id","IsAPartOf":false,"RelationshipName":null,"InputMode":"Auto",
+"Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"Req
+uired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Values":
+null}
+Read-Only No
+Hidden No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 74/141
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 12: Eliminar venta previa
+Column name Eliminar venta previa
+Visible? ALWAYS
+Type Ref
+Type Qualifier
+{"ReferencedTableName":"Eliminar venta previa
+Output","ReferencedRootTableName":null,"ReferencedType":"Tex
+t","ReferencedTypeQualifier":"
+{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\
+"Plain
+Text\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Messa
+ge_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable
+_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}","Reference
+dKeyColumn":"Instance
+Id","IsAPartOf":false,"RelationshipName":null,"InputMode":"Auto",
+"Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"Req
+uired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Values":
+null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 75/141
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable Yes
+Scannable No
+Sensitive data No
+Schema Name Añade entrada a ResumenVentas Output_Schema
+Schema Name Añade entrada a ResumenVentas Output_Schema
+Visible? NEVER
+Column 1: Instance Id
+Column name Instance Id
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key Yes
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable Yes
+Scannable No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 76/141
+Sensitive data No
+Column 2: idVenta
+Column name idVenta
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 3: Mercadillo
+Column name Mercadillo
+Visible? ALWAYS
+Type Ref
+Type Qualifier {"ReferencedTableName":"Mercadillos","ReferencedRootTableN
+ame":"Mercadillos","ReferencedType":"Text","ReferencedTypeQu
+alifier":"
+{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\
+"Plain
+Text\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Messa
+ge_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 77/141
+_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}","Reference
+dKeyColumn":"Nombre","IsAPartOf":true,"RelationshipName":null
+,"InputMode":"Auto","Valid_If":null,"Error_Message_If_Invalid":null,
+"Show_If":null,"Required_If":null,"Editable_If":null,"Reset_If":null,"S
+uggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 4: Producto
+Column name Producto
+Visible? ALWAYS
+Type Ref
+Type Qualifier
+{"ReferencedTableName":"Productos","ReferencedRootTableNa
+me":"Productos","ReferencedType":"Text","ReferencedTypeQualif
+ier":"
+{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\
+"Plain
+Text\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Messa
+ge_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable
+_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}","Reference
+dKeyColumn":"idProducto","IsAPartOf":false,"RelationshipName"
+:null,"InputMode":"Auto","Valid_If":null,"Error_Message_If_Invalid":
+null,"Show_If":"","Required_If":null,"Editable_If":"=ISBLANK([_THIS
+ROW_BEFORE].
+[Producto])","Reset_If":null,"Suggested_Values":null}
+Read-Only No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 78/141
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 5: Cantidad
+Column name Cantidad
+Visible? ALWAYS
+Type Number
+Type Qualifier
+{"MaxValue":null,"MinValue":1,"StepValue":null,"NumericDigits":n
+ull,"ShowThousandsSeparator":true,"NumberDisplayMode":"Aut
+o","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"Re
+quired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Values
+":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 79/141
+Scannable No
+Sensitive data No
+Column 6: PrecioVenta
+Column name PrecioVenta
+Visible? ALWAYS
+Type Price
+Type Qualifier
+{"CurrencySymbol":"€","MaxValue":null,"MinValue":null,"StepValu
+e":null,"DecimalDigits":2,"NumericDigits":null,"ShowThousandsS
+eparator":true,"NumberDisplayMode":"Auto","Valid_If":null,"Error_
+Message_If_Invalid":null,"Show_If":null,"Required_If":null,"Editabl
+e_If":"=ISNOTBLANK([Producto])","Reset_If":null,"Suggested_Val
+ues":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable No
+Scannable No
+Sensitive data No
+Column 7: Importe
+Column name Importe
+Visible? ALWAYS
+Type Price
+Type Qualifier {"CurrencySymbol":"€","MaxValue":null,"MinValue":null,"StepValu
+e":null,"DecimalDigits":2,"NumericDigits":null,"ShowThousandsS
+eparator":true,"NumberDisplayMode":"Auto","Valid_If":null,"Error_
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 80/141
+Message_If_Invalid":null,"Show_If":null,"Required_If":null,"Editabl
+e_If":null,"Reset_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable No
+Scannable No
+Sensitive data No
+Column 8: ImagenProductoVendido
+Column name ImagenProductoVendido
+Visible? ALWAYS
+Type Image
+Type Qualifier
+{"AllowDrawing":false,"FolderLocation":"=CONCATENATE(\"/Ima
+genes/\", [Producto].
+[Nombre])","Valid_If":null,"Error_Message_If_Invalid":null,"Show_I
+f":null,"Required_If":null,"Editable_If":null,"Reset_If":null,"Suggeste
+d_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 81/141
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable No
+Scannable No
+Sensitive data No
+Column 9: EditFlag
+Column name EditFlag
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable Yes
+Scannable No
+Sensitive data No
+Schema Name Agrupar ventas del mismo producto
+Output_Schema
+Schema Name Agrupar ventas del mismo producto Output_Schema
+Visible? NEVER
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 82/141
+Column 1: Instance Id
+Column name Instance Id
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key Yes
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 2: idVenta
+Column name idVenta
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 83/141
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 3: Mercadillo
+Column name Mercadillo
+Visible? ALWAYS
+Type Ref
+Type Qualifier
+{"ReferencedTableName":"Mercadillos","ReferencedRootTableN
+ame":"Mercadillos","ReferencedType":"Text","ReferencedTypeQu
+alifier":"
+{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\
+"Plain
+Text\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Messa
+ge_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable
+_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}","Reference
+dKeyColumn":"Nombre","IsAPartOf":true,"RelationshipName":null
+,"InputMode":"Auto","Valid_If":null,"Error_Message_If_Invalid":null,
+"Show_If":null,"Required_If":null,"Editable_If":null,"Reset_If":null,"S
+uggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 84/141
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 4: Producto
+Column name Producto
+Visible? ALWAYS
+Type Ref
+Type Qualifier
+{"ReferencedTableName":"Productos","ReferencedRootTableNa
+me":"Productos","ReferencedType":"Text","ReferencedTypeQualif
+ier":"
+{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\
+"Plain
+Text\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Messa
+ge_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable
+_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}","Reference
+dKeyColumn":"idProducto","IsAPartOf":false,"RelationshipName"
+:null,"InputMode":"Auto","Valid_If":null,"Error_Message_If_Invalid":
+null,"Show_If":"","Required_If":null,"Editable_If":"=ISBLANK([_THIS
+ROW_BEFORE].
+[Producto])","Reset_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable Yes
+Scannable No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 85/141
+Sensitive data No
+Column 5: Cantidad
+Column name Cantidad
+Visible? ALWAYS
+Type Number
+Type Qualifier
+{"MaxValue":null,"MinValue":1,"StepValue":null,"NumericDigits":n
+ull,"ShowThousandsSeparator":true,"NumberDisplayMode":"Aut
+o","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"Re
+quired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Values
+":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable No
+Scannable No
+Sensitive data No
+Column 6: PrecioVenta
+Column name PrecioVenta
+Visible? ALWAYS
+Type Price
+Type Qualifier
+{"CurrencySymbol":"€","MaxValue":null,"MinValue":null,"StepValu
+e":null,"DecimalDigits":2,"NumericDigits":null,"ShowThousandsS
+eparator":true,"NumberDisplayMode":"Auto","Valid_If":null,"Error_
+Message_If_Invalid":null,"Show_If":null,"Required_If":null,"Editabl
+e_If":"=ISNOTBLANK([Producto])","Reset_If":null,"Suggested_Val
+ues":null}
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 86/141
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable No
+Scannable No
+Sensitive data No
+Column 7: Importe
+Column name Importe
+Visible? ALWAYS
+Type Price
+Type Qualifier
+{"CurrencySymbol":"€","MaxValue":null,"MinValue":null,"StepValu
+e":null,"DecimalDigits":2,"NumericDigits":null,"ShowThousandsS
+eparator":true,"NumberDisplayMode":"Auto","Valid_If":null,"Error_
+Message_If_Invalid":null,"Show_If":null,"Required_If":null,"Editabl
+e_If":null,"Reset_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 87/141
+Searchable No
+Scannable No
+Sensitive data No
+Column 8: ImagenProductoVendido
+Column name ImagenProductoVendido
+Visible? ALWAYS
+Type Image
+Type Qualifier
+{"AllowDrawing":false,"FolderLocation":"=CONCATENATE(\"/Ima
+genes/\", [Producto].
+[Nombre])","Valid_If":null,"Error_Message_If_Invalid":null,"Show_I
+f":null,"Required_If":null,"Editable_If":null,"Reset_If":null,"Suggeste
+d_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable No
+Scannable No
+Sensitive data No
+Column 9: EditFlag
+Column name EditFlag
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 88/141
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable Yes
+Scannable No
+Sensitive data No
+Schema Name Eliminar venta previa Output_Schema
+Schema Name Eliminar venta previa Output_Schema
+Visible? NEVER
+Column 1: Instance Id
+Column name Instance Id
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key Yes
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 89/141
+Part of Key? No
+Fixed definition? No
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 2: idVenta
+Column name idVenta
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 3: Mercadillo
+Column name Mercadillo
+Visible? ALWAYS
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 90/141
+Type Ref
+Type Qualifier
+{"ReferencedTableName":"Mercadillos","ReferencedRootTableN
+ame":"Mercadillos","ReferencedType":"Text","ReferencedTypeQu
+alifier":"
+{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\
+"Plain
+Text\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Messa
+ge_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable
+_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}","Reference
+dKeyColumn":"Nombre","IsAPartOf":true,"RelationshipName":null
+,"InputMode":"Auto","Valid_If":null,"Error_Message_If_Invalid":null,
+"Show_If":null,"Required_If":null,"Editable_If":null,"Reset_If":null,"S
+uggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 4: Producto
+Column name Producto
+Visible? ALWAYS
+Type Ref
+Type Qualifier {"ReferencedTableName":"Productos","ReferencedRootTableNa
+me":"Productos","ReferencedType":"Text","ReferencedTypeQualif
+ier":"
+{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\
+"Plain
+Text\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Messa
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 91/141
+ge_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable
+_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}","Reference
+dKeyColumn":"idProducto","IsAPartOf":false,"RelationshipName"
+:null,"InputMode":"Auto","Valid_If":null,"Error_Message_If_Invalid":
+null,"Show_If":"","Required_If":null,"Editable_If":"=ISBLANK([_THIS
+ROW_BEFORE].
+[Producto])","Reset_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable Yes
+Scannable No
+Sensitive data No
+Column 5: Cantidad
+Column name Cantidad
+Visible? ALWAYS
+Type Number
+Type Qualifier
+{"MaxValue":null,"MinValue":1,"StepValue":null,"NumericDigits":n
+ull,"ShowThousandsSeparator":true,"NumberDisplayMode":"Aut
+o","Valid_If":null,"Error_Message_If_Invalid":null,"Show_If":null,"Re
+quired_If":null,"Editable_If":null,"Reset_If":null,"Suggested_Values
+":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 92/141
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable No
+Scannable No
+Sensitive data No
+Column 6: PrecioVenta
+Column name PrecioVenta
+Visible? ALWAYS
+Type Price
+Type Qualifier
+{"CurrencySymbol":"€","MaxValue":null,"MinValue":null,"StepValu
+e":null,"DecimalDigits":2,"NumericDigits":null,"ShowThousandsS
+eparator":true,"NumberDisplayMode":"Auto","Valid_If":null,"Error_
+Message_If_Invalid":null,"Show_If":null,"Required_If":null,"Editabl
+e_If":"=ISNOTBLANK([Producto])","Reset_If":null,"Suggested_Val
+ues":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable No
+Scannable No
+Sensitive data No
+Column 7: Importe
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 93/141
+Column name Importe
+Visible? ALWAYS
+Type Price
+Type Qualifier
+{"CurrencySymbol":"€","MaxValue":null,"MinValue":null,"StepValu
+e":null,"DecimalDigits":2,"NumericDigits":null,"ShowThousandsS
+eparator":true,"NumberDisplayMode":"Auto","Valid_If":null,"Error_
+Message_If_Invalid":null,"Show_If":null,"Required_If":null,"Editabl
+e_If":null,"Reset_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable No
+Scannable No
+Sensitive data No
+Column 8: ImagenProductoVendido
+Column name ImagenProductoVendido
+Visible? ALWAYS
+Type Image
+Type Qualifier
+{"AllowDrawing":false,"FolderLocation":"=CONCATENATE(\"/Ima
+genes/\", [Producto].
+[Nombre])","Valid_If":null,"Error_Message_If_Invalid":null,"Show_I
+f":null,"Required_If":null,"Editable_If":null,"Reset_If":null,"Suggeste
+d_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 94/141
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable No
+Scannable No
+Sensitive data No
+Column 9: EditFlag
+Column name EditFlag
+Visible? ALWAYS
+Type Text
+Type Qualifier
+{"MaxLength":null,"MinLength":null,"LongTextFormatting":"Plain
+Text","IsMulticolumnKey":false,"Valid_If":null,"Error_Message_If_I
+nvalid":null,"Show_If":null,"Required_If":null,"Editable_If":null,"Res
+et_If":null,"Suggested_Values":null}
+Read-Only No
+Hidden No
+Label No
+Formula version 0
+Reset on edit? No
+System Defined? No
+Key No
+Part of Key? No
+Fixed definition? Yes
+Editable Initial
+Value? Yes
+Virtual? No
+Searchable Yes
+Scannable No
+Sensitive data No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 95/141
+UX
+Views
+View name Mercadillos
+View name Mercadillos
+Created by App owner
+View type card
+ActionType Square Image
+Position left
+View configuration {"Layout":{"style":
+{"type":"style","padding":8,"backgroundColor":"transparent","boxSizing
+":"border-box","id":"2dfab398-1f6a-439c-9c5f-
+d8bfed642592"},"children":[{"style":{"type":"style","color":
+{"type":"variable","value":"primaryText","id":"29018101-6c73-4014-
+839e-
+1fa5d55bf544"},"display":"flex","flexDirection":"column","cursor":"point
+er","background":
+{"type":"variable","value":"mainContentBackground","id":"e47e18e3-
+c05c-4a4e-9553-0535c09cba71"},"border":
+{"type":"variable","value":"cardBorderStyle","id":"dd7d1de1-7c8b-4c04-
+a860-7c58a814f9d2"},"borderRadius":
+{"type":"variable","value":"cardBorderRadius","id":"89c46395-3d12-
+4e7b-93e0-b8822ff187ed"},"borderColor":
+{"type":"variable","value":"cardOutline","id":"486a4c4c-853c-4872-
+acf0-1a638f21b4f3"},"highlighted":{"type":"style","background":
+{"type":"variable","value":"tableRowFocus","id":"d220ae1c-9b38-45ec-
+b75a-b03d8592fed3"},"id":"b10155de-960d-4680-99ab-
+12250e16f94e"},"highlightedUpdate":{"type":"style","border":
+{"type":"variable","value":"cardBorderStyleSelected","id":"80d3d8fc-
+5f1f-4591-a3af-73eeaef9d65c"},"borderColor":
+{"type":"variable","value":"focusColor","id":"1a1caa62-e881-4be0-
+b8d2-df87967f067f"},"id":"b3feab35-5f65-4fca-99e8-
+da7067f2e33e"},"hover":{"type":"style","boxShadow":
+{"type":"variable","value":"cardHoverShadow","id":"d220ae1c-9b38-
+45ec-b75a-b03d8592fede"},"id":"b10155de-960d-4680-99ab-
+12250e16f9ee"},"down":{"type":"style","boxShadow":
+{"type":"variable","value":"cardHoverShadow","id":"21f41bc4-1d8f-
+4212-a6e4-057bd3a8fe0b"},"id":"9205c7a9-35ed-4237-b9c8-
+92d448dc9b11"},"fontSize":14,"id":"8027a268-6a7a-420a-bd3e-
+bd1d6f2d4791"},"children":[{"style":
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 96/141
+{"type":"style","display":"flex","flexDirection":"column","id":"54334a98-
+55fb-47d4-a19d-2178aa3810ab"},"children":[{"style":
+{"type":"style","display":"flex","alignItems":"center","justifyContent":"fle
+x-start","padding":16,"id":"b3480a13-a59b-4845-9183-
+cb382fbf4bb6"},"children":
+[{"value":"https://www.appsheet.com/Content/editor/img/empty-
+media-template.png","child":{"id":"mainImage","type":"image","style":
+{"type":"style","overflow":"hidden","width":40,"height":40,"borderRadius
+":"50%","objectFit":"cover","flex":"0 0 40px","id":"08b2ff66-db02-4986-
+a506-90ad44e64fe3"}},"id":"a4046669-eeaf-4fba-b60a-
+b801ec7bdd77","type":"constant"},{"style":
+{"type":"style","display":"flex","flexDirection":"column","marginLeft":16,"
+flexShrink":1,"flexGrow":0,"overflow":"hidden","id":"3412b50f-9301-
+44de-8604-b7986b3df1ee"},"children":[{"value":"Nombre","child":
+{"id":"labelText","type":"text","style":
+{"type":"style","fontSize":14,"fontWeight":"bold","id":"0381f842-cef3-
+4916-98ab-0652fe5f9364"},"ignore":false},"id":"098d9ec0-ce0c-4d81-
+ac6b-273419a9611b","type":"binding","ignore":false},
+{"value":"Fecha","child":{"id":"subtitleText","type":"text","style":
+{"type":"style","opacity":0.6,"fontSize":12,"maxHeight":40,"id":"370589e
+1-a092-47df-9afe-c03372005584"},"ignore":false},"id":"ea61f212-
+ed17-45cc-abbc-
+f7b86af54436","type":"binding","ignore":false}],"id":"562105ab-a45e-
+4192-ad67-639920301de9","type":"container"}],"id":"eb2723f4-e9d3-
+4899-9a0a-2b28190303eb","type":"container"}],"id":"13f6bf02-3034-
+4f1c-8ff2-4ac14ca19d9f","type":"container"},
+{"value":"imageName","child":{"id":"instaImage","type":"image","style":
+{"type":"style","width":"100%","height":150,"objectFit":"cover","borderRa
+dius":
+{"type":"variable","value":"cardImageBorderRadius","id":"69c9242c-
+fc6d-42c3-8e7a-bbbc926ace89"},"id":"9a844d1c-fced-4724-b2fa-
+81349bef45a7"}},"id":"e7a6aea8-e6dd-44c6-a9f7-
+75c80f866016","type":"variable"}],"variables":
+[{"name":"imageName","value":"https://www.appsheet.com/Content/
+editor/img/empty-media-template.png"},
+{"name":"labelName","value":"Title goes here"}],"onClick":{"value":"Go
+to details","id":"mainClickAction","type":"action"},"id":"d6286ba5-0f82-
+4d9d-ac94-
+c415ab502d0a","type":"container"}],"name":"photo","version":0,"id":"47f
+15e4a-3aa7-4096-9fc6-
+d84759c25260","type":"container"},"MainDeckImageColumn":"**auto
+**","ImageShape":"Square
+Image","PrimaryDeckHeaderColumn":"**auto**","SecondaryDeckHea
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 97/141
+derColumn":"**auto**","DeckSummaryColumn":"**auto**","DeckNeste
+dTableColumn":null,"ShowActionBar":true,"ActionColumns":
+[],"ActionBarEntries":[],"GroupBy":
+[],"GroupAggregate":"NONE","SortBy":
+[],"PrimarySortColumn":null,"IsPrimarySortDescending":false,"Events"
+:[],"Icon":"fal fa-balance-scale-
+right","IconRunnerUps":null,"MenuOrder":1}
+Visible? ALWAYS
+Icon 
+Menu order 1
+View name Productos
+View name Productos
+Created by App owner
+View type card
+ActionType Square Image
+Position right
+View configuration {"Layout":{"style":{"type":"style","color":
+{"type":"variable","value":"primaryText","id":"7169c5f7-dbee-4c27-
+a791-511f7aa9c621"},"border":
+{"type":"variable","value":"cardBorderStyle","id":"62466501-cab9-45f3-
+8f9c-f75d23a33868"},"borderRadius":
+{"type":"variable","value":"cardBorderRadius","id":"737f518f-a9d9-
+4fbc-b643-93c6721d4b4c"},"borderColor":
+{"type":"variable","value":"cardOutline","id":"7a5ade04-c6a3-4ddc-
+8f22-
+1d7633fa1227"},"display":"flex","flexDirection":"column","background
+Color":
+{"type":"variable","value":"mainContentBackground","id":"bd58227d-
+e947-4c65-889b-1e4e256752e3"},"fontSize":16,"highlightedUpdate":
+{"type":"style","border":
+{"type":"variable","value":"cardBorderStyleSelected","id":"50133713-
+169a-4157-b5b8-df7e864bff0f"},"borderColor":
+{"type":"variable","value":"focusColor","id":"ad86659d-a461-4418-
+b324-495777643ff3"},"id":"0f8753f6-f36c-4fed-b948-
+a42c8f895af2"},"id":"bf49015e-053c-4635-b2bf-
+a3afe738ec61"},"children":[{"style":
+{"type":"style","display":"flex","alignItems":"center","padding":8,"cursor":
+"pointer","backgroundColor":
+{"type":"variable","value":"mainContentBackground","id":"0cacd2ef-
+e515-4884-8ba4-d900d3144ba4"},"borderRadius":
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 98/141
+{"type":"variable","value":"cardBorderRadius","id":"471b257b-0f50-
+4cfd-a7fd-3c21cbc5b154"},"transition":"background 0.8s","hover":
+{"type":"style","background":
+{"type":"variable","value":"cardHoverBackground","id":"d220ae1c-
+9b38-45ec-b75a-b03d8592fede"},"boxShadow":
+{"type":"variable","value":"cardHoverShadow","id":"d220ae1c-9b38-
+45ec-b75a-b03d8592fede"},"transition":"background
+0.8s","id":"b10155de-960d-4680-99ab-12250e16f9ee"},"highlighted":
+{"type":"style","background":
+{"type":"variable","value":"tableRowFocus","id":"d220ae1c-9b38-45ec-
+b75a-b03d8592fed3"},"id":"b10155de-960d-4680-99ab-
+12250e16f94e"},"highlightedUpdate":{},"down":
+{"type":"style","background":
+{"type":"variable","value":"cardHoverBackground","id":"21f41bc4-1d8f-
+4212-a6e4-057bd3a8fe0b"},"transition":"background
+0.8s","id":"9205c7a9-35ed-4237-b9c8-
+92d448dc9b11"},"id":"41561a21-2f97-490c-9ca2-
+d0f862f55568"},"children":[{"value":"Imagen","child":
+{"id":"mainImage","type":"image","style":
+{"type":"style","overflow":"hidden","width":70,"height":70,"borderRadius
+":"2px","objectFit":"cover","flex":"0 0
+70px","alignItems":"center","justifyContent":"center","id":"bc54d99e-
+c9a5-4f7c-bc5a-7ff388247636"}},"id":"28502c76-f322-4bee-a3dd-
+3517932edb72","type":"binding"},{"style":
+{"type":"style","display":"flex","flexDirection":"column","marginLeft":16,"
+flexShrink":1,"flexGrow":0,"overflow":"hidden","id":"1b750d3d-d245-
+4672-a22d-e194832d833c"},"children":[{"value":"Nombre","child":
+{"id":"labelText","type":"text","style":{"type":"style","id":"507ee6fc-c860-
+445f-880a-c8682b6bd878"}},"id":"3f58a5eb-8102-4b18-b70c-
+81c3721275d3","type":"binding"},{"value":"Precio","child":
+{"id":"subtitleText","type":"text","style":
+{"type":"style","opacity":0.6,"fontSize":12,"maxHeight":40,"id":"0211ba9
+6-1cee-43ff-a277-dc8081acdd07"},"ignore":false},"id":"af00a19c-
+2913-444c-a6cf-
+f10de41f6961","type":"binding","ignore":false}],"id":"cc8e8bdf-8cbf-
+45fd-9bf6-3cc2da557703","type":"container"},{"style":
+{"type":"style","justifyContent":"flex-
+end","flexGrow":1,"display":"flex","id":"03e8ac10-f699-4b0e-b962-
+c2f9b1beb94e"},"children":[{"style":{"type":"style","color":
+{"id":"ellipsisColor","type":"variable","value":"primaryText"},"id":"f319ea
+f8-712b-4299-ba87-5da44fda098a"},"items":[{"style":
+{"type":"style","id":"771c2038-f239-4584-9a68-
+8e870783c818"},"onClick":{"id":"8969b669-2c65-49b4-8068-
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 99/141
+f388d058d3af","type":"action"},"icon":{"type":"constant","value":"fa-
+edit","id":"e1d07767-257b-4bd2-80c4-cfe0773a3bde"},"text":
+{"value":"Edit","id":"ae79459c-e025-4fbd-b8a5-
+a67c1951a6fa","type":"actionDisplayText"},"id":"cb2b0d60-7def-4900-
+93be-de47d032c897","type":"systemAction","ignore":true},{"style":
+{"type":"style","id":"cda5f0a8-23ef-44a3-9ac3-
+4b25a63c857f"},"onClick":{"id":"9164b27a-0247-493c-91fe-
+5759897fd40b","type":"action"},"icon":{"type":"constant","value":"fa-
+trash-alt","id":"c7e376a4-a10d-4255-a9d2-8e38befe4cea"},"text":
+{"value":"Delete","id":"9414fa56-e4d7-4ac7-942d-
+b88c1433122b","type":"actionDisplayText"},"id":"e09dfed3-b0ba-
+4a3a-9d32-f1f34f7b82cb","type":"systemAction","ignore":true},
+{"style":{"type":"style","id":"f62e1913-b059-422a-a0ce-
+c6c1ed939c19"},"onClick":{"id":"b4573f97-1ca8-48ea-bffb-
+e03966b053c9","type":"action"},"icon":{"type":"constant","value":"fas
+fa-edit","id":"67e305c4-18ca-47c6-b221-38bb5634e8bd"},"text":
+{"value":"Action 3","id":"b75ef34e-a76d-4ce7-8ab8-
+5be5dc3ad59b","type":"constant"},"id":"c65d949d-a0ae-44ef-a7a0-
+1c3be8b647eb","type":"systemAction"}],"id":"cdf524ff-9a78-4f03-
+8b01-e5bde99d56fc","type":"ellipsisMenu"}],"id":"c0bf415a-39e0-
+4d21-990a-f3fc8afae169","type":"container"}],"onClick":{"value":"Go to
+details","id":"bfaf6abf-c1a8-4e20-b27f-
+24e65c0da7a1","type":"action","ignore":false},"id":"357a17b3-b454-
+405e-9a77-
+59fd604173ce","type":"container","ignore":false}],"name":"list","variabl
+es":
+[{"name":"imageName","value":"https://www.appsheet.com/Content/
+editor/img/empty-media-template.png"},
+{"name":"labelName","value":"Title goes
+here"}],"version":0,"id":"a89b72c9-97cf-43a7-8b48-
+b3daf0733a83","type":"container","ignore":false},"MainDeckImageCol
+umn":"**auto**","ImageShape":"Square
+Image","PrimaryDeckHeaderColumn":"**auto**","SecondaryDeckHea
+derColumn":"**auto**","DeckSummaryColumn":"**auto**","DeckNeste
+dTableColumn":null,"ShowActionBar":true,"ActionColumns":
+[],"ActionBarEntries":[],"GroupBy":
+[{"Column":"Tipo","Order":"Ascending"}],"GroupAggregate":"NONE","So
+rtBy":
+[],"PrimarySortColumn":null,"IsPrimarySortDescending":false,"Events"
+:[],"Icon":"far fa-archive","IconRunnerUps":null,"MenuOrder":1}
+Visible? ALWAYS
+Icon 
+Menu order 1
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 100/141
+View name Inventario
+View name Inventario
+Created by App owner
+View type deck
+ActionType Square Image
+Position right most
+View configuration
+{"MainDeckImageColumn":"**none**","ImageShape":"Square
+Image","PrimaryDeckHeaderColumn":"**auto**","SecondaryDeckHea
+derColumn":"**none**","DeckSummaryColumn":"Cantidad","DeckNest
+edTableColumn":"**none**","ShowActionBar":false,"ActionColumns":
+[],"ActionBarEntries":["Open Url (EnlaceCompra)"],"GroupBy":
+[],"GroupAggregate":"NONE","SortBy":
+[{"Column":"Nombre","Order":"Ascending"}],"PrimarySortColumn":null,"
+IsPrimarySortDescending":false,"Events":[{"EventType":"Row
+Selected","EventAction":"Open Url (EnlaceCompra)"},
+{"EventType":"Row Swiped Left","EventAction":"**auto**"},
+{"EventType":"Row Swiped Right","EventAction":"**auto**"}],"Icon":"fa-
+list-ul","IconRunnerUps":null,"MenuOrder":1}
+Visible? ALWAYS
+Icon 
+Menu order 1
+View name ComponentesProducto_Detail
+View name ComponentesProducto_Detail
+Created by System
+View type detail
+ActionType Automatic
+Position ref
+View configuration
+{"MainSlideshowImageColumn":"**auto**","DetailContentColumn":"**
+none**","HeaderColumns":[],"QuickEditColumns":[],"ColumnOrder":
+[],"ImageStyle":"Fill","Layout":null,"UseCardLayout":false,"DisplayMode
+":"Automatic","MaxNestedRows":5,"SlideshowMode":true,"DesktopSpl
+itMode":"Split view","UseDesktopMultiColumn":true,"SortBy":
+[],"PrimarySortColumn":null,"IsPrimarySortDescending":false,"Events"
+:[],"Icon":"fa-indent","IconRunnerUps":null,"MenuOrder":1}
+Visible? ALWAYS
+Icon 
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 101/141
+Menu order 1
+View name ComponentesProducto_Form
+View name ComponentesProducto_Form
+Created by System
+View type form
+Position ref
+View configuration
+{"ColumnOrder":null,"AutoSave":false,"AutoReopen":false,"FinishView"
+:"**Automatic**","RowKey":"","FormStyle":"Automatic","PageStyle":"Aut
+omatic","FormFooterStyle":"Bottom","MaxNestedRows":5,"AudioInput
+":false,"Events":[{"EventType":"Form
+Saved","EventAction":"**auto**"}],"Icon":"fa-
+edit","IconRunnerUps":null,"MenuOrder":1}
+Visible? ALWAYS
+Icon 
+Menu order 1
+View name ComponentesProducto_Inline
+View name ComponentesProducto_Inline
+Created by System
+View type table
+Position ref
+View configuration
+{"ColumnWidth":"Default","EnableQuickEdit":false,"ColumnOrder":
+[],"GroupBy":[],"GroupAggregate":"NONE","SortBy":
+[],"PrimarySortColumn":null,"IsPrimarySortDescending":false,"Events"
+:[{"EventType":"Row Selected","EventAction":"**auto**"}],"Icon":"fa-
+table","IconRunnerUps":null,"MenuOrder":1}
+Visible? ALWAYS
+Icon 
+Menu order 1
+View name Compras_Detail
+View name Compras_Detail
+Created by System
+View type detail
+ActionType Automatic
+Position ref
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 102/141
+View configuration
+{"MainSlideshowImageColumn":"**auto**","DetailContentColumn":"**
+none**","HeaderColumns":[],"QuickEditColumns":[],"ColumnOrder":
+[],"ImageStyle":"Fill","Layout":null,"UseCardLayout":false,"DisplayMode
+":"Automatic","MaxNestedRows":5,"SlideshowMode":true,"DesktopSpl
+itMode":"Split view","UseDesktopMultiColumn":true,"SortBy":
+[],"PrimarySortColumn":null,"IsPrimarySortDescending":false,"Events"
+:[],"Icon":"fa-indent","IconRunnerUps":null,"MenuOrder":1}
+Visible? ALWAYS
+Icon 
+Menu order 1
+View name Compras_Form
+View name Compras_Form
+Created by System
+View type form
+Position ref
+View configuration
+{"ColumnOrder":null,"AutoSave":false,"AutoReopen":false,"FinishView"
+:"**Automatic**","RowKey":"","FormStyle":"Automatic","PageStyle":"Aut
+omatic","FormFooterStyle":"Bottom","MaxNestedRows":5,"AudioInput
+":false,"Events":[{"EventType":"Form
+Saved","EventAction":"**auto**"}],"Icon":"fa-
+edit","IconRunnerUps":null,"MenuOrder":1}
+Visible? ALWAYS
+Icon 
+Menu order 1
+View name Compras_Inline
+View name Compras_Inline
+Created by System
+View type table
+Position ref
+View configuration
+{"ColumnWidth":"Default","EnableQuickEdit":false,"ColumnOrder":
+[],"GroupBy":[],"GroupAggregate":"NONE","SortBy":
+[],"PrimarySortColumn":null,"IsPrimarySortDescending":false,"Events"
+:[{"EventType":"Row Selected","EventAction":"**auto**"}],"Icon":"fa-
+table","IconRunnerUps":null,"MenuOrder":1}
+Visible? ALWAYS
+Icon 
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 103/141
+Menu order 1
+View name Inventario_Detail
+View name Inventario_Detail
+Created by System
+View type detail
+ActionType Automatic
+Position ref
+View configuration
+{"MainSlideshowImageColumn":"**auto**","DetailContentColumn":"**
+none**","HeaderColumns":[],"QuickEditColumns":[],"ColumnOrder":
+[],"ImageStyle":"Fill","Layout":null,"UseCardLayout":false,"DisplayMode
+":"Automatic","MaxNestedRows":5,"SlideshowMode":true,"DesktopSpl
+itMode":"Split view","UseDesktopMultiColumn":true,"SortBy":
+[],"PrimarySortColumn":null,"IsPrimarySortDescending":false,"Events"
+:[],"Icon":"fa-indent","IconRunnerUps":null,"MenuOrder":1}
+Visible? ALWAYS
+Icon 
+Menu order 1
+View name Inventario_Form
+View name Inventario_Form
+Created by System
+View type form
+Position ref
+View configuration
+{"ColumnOrder":null,"AutoSave":false,"AutoReopen":false,"FinishView"
+:"**Automatic**","RowKey":"","FormStyle":"Automatic","PageStyle":"Aut
+omatic","FormFooterStyle":"Bottom","MaxNestedRows":5,"AudioInput
+":false,"Events":[{"EventType":"Form
+Saved","EventAction":"**auto**"}],"Icon":"fa-
+edit","IconRunnerUps":null,"MenuOrder":1}
+Visible? ALWAYS
+Icon 
+Menu order 1
+View name Mercadillos_Detail
+View name Mercadillos_Detail
+Created by System
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 104/141
+View type detail
+ActionType Normal
+Position ref
+View configuration {"MainSlideshowImageColumn":"**auto**","DetailContentColumn":"**
+none**","HeaderColumns":[],"QuickEditColumns":[],"ColumnOrder":
+["Nombre","Fecha","CosteInscripcion","TotalBeneficio","Related
+Ventas"],"ImageStyle":"Fill","Layout":{"style":
+{"type":"style","backgroundColor":"transparent","boxSizing":"border-
+box","height":"100%","id":"18803ca8-6cbf-41d7-b090-
+4509e0201431","inspection":{"isInspectable":true,"eventHandlers":
+{}}},"children":[{"style":{"type":"style","color":
+{"type":"variable","value":"primaryText","id":"10ee5459-af8f-45ac-
+b486-193a9968c81e","inspection":
+{"isInspectable":true,"eventHandlers":
+{}}},"height":"100%","display":"flex","flexDirection":"column","justifyCont
+ent":"space-between","background":
+{"type":"variable","value":"mainContentBackground","id":"847233a2-
+0243-4f05-ac39-9d608383512f","inspection":
+{"isInspectable":true,"eventHandlers":{}}},"fontSize":14,"id":"0ed6623e-
+e7c8-4fc6-af1f-01adbfb245a0","inspection":
+{"isInspectable":true,"eventHandlers":{}}},"children":
+[{"value":"imageName","child":{"id":"media","type":"image","style":
+{"type":"style","width":"100%","height":194,"borderRadius":"4px 4px 0
+0","objectFit":"cover","id":"3a9f1a4f-a1c1-4e0b-b789-
+dcf4b8995969","inspection":{"isInspectable":true,"eventHandlers":
+{}}},"inspection":{"isInspectable":true,"eventHandlers":
+{}},"ignore":true},"id":"mainImage","type":"variable","inspection":
+{"isInspectable":true,"eventHandlers":{}}},{"style":
+{"type":"style","padding":16,"id":"99ed691e-89e5-4b96-8e66-
+9d19339d1d3b","inspection":{"isInspectable":true,"eventHandlers":
+{}}},"children":[{"value":"Nombre","child":{"id":"label","type":"text","style":
+{"type":"style","fontSize":21,"lineHeight":1.15,"id":"97559953-75d9-
+4b10-919d-c416d183b4c9","inspection":
+{"isInspectable":true,"eventHandlers":{}}},"inspection":
+{"isInspectable":true,"eventHandlers":{}}},"id":"c6a3a013-0faf-4db7-
+8829-39efc6704784","type":"binding","inspection":
+{"isInspectable":true,"eventHandlers":{}}},{"value":"Subheader goes
+here.","child":{"id":"subheader","type":"text","style":
+{"type":"style","fontSize":14,"opacity":0.6,"paddingTop":4,"overflow":"hi
+dden","id":"f3a98f74-a901-451b-9b64-8c00e5632325","inspection":
+{"isInspectable":true,"eventHandlers":{}}},"inspection":
+{"isInspectable":true,"eventHandlers":{}},"ignore":true},"id":"bba2d2cb-
+c355-43aa-a0a3-46e89a578400","type":"constant","inspection":
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 105/141
+{"isInspectable":true,"eventHandlers":
+{}}}],"id":"headerTextContainer","type":"container","inspection":
+{"isInspectable":true,"eventHandlers":{}}},{"value":"Fecha","child":
+{"id":"description","type":"text","style":
+{"type":"style","fontSize":14,"padding":16,"paddingTop":8,"maxHeight":
+100,"overflow":"hidden","id":"f3a98f74-a901-451b-9b64-
+8c00e5632327","inspection":{"isInspectable":true,"eventHandlers":
+{}}},"inspection":{"isInspectable":true,"eventHandlers":
+{}}},"id":"bba2d2cb-c355-43aa-a0a3-
+46e89a5783d0","type":"binding","inspection":
+{"isInspectable":true,"eventHandlers":{}}},{"style":
+{"type":"style","display":"flex","alignItems":"center","justifyContent":"sp
+ace-
+between","padding":8,"paddingTop":0,"paddingBottom":0,"id":"5fa06ef
+2-6010-4c1e-aa84-668f8ac967aa","inspection":
+{"isInspectable":true,"eventHandlers":{}}},"children":[{"value":"Action
+1","child":{"id":"Action 1","type":"text","onClick":
+{"type":"action","id":"8faa486e-80a1-4bf8-9911-
+ff05823f7018","inspection":{"isInspectable":true,"eventHandlers":
+{}}},"style":
+{"type":"variable","value":"actionButtonTextStyle","id":"4fcb9585-70b2-
+4bc0-a407-be6849bea1a7","inspection":
+{"isInspectable":true,"eventHandlers":{}}},"inspection":
+{"isInspectable":true,"eventHandlers":{}},"ignore":true},"id":"c503ebe1-
+33d7-49e6-979d-a4f4a0345863","type":"constant","inspection":
+{"isInspectable":true,"eventHandlers":{}}},{"value":"Edit","child":
+{"id":"Action 2","type":"text","onClick":{"type":"action","id":"fb9d48ba-
+a444-4617-8859-7065b058efac","inspection":
+{"isInspectable":true,"eventHandlers":{}},"value":"Edit"},"style":
+{"type":"variable","value":"actionButtonTextStyle","id":"77f5bd38-248e-
+4f75-bf97-18e3b5c54d50","inspection":
+{"isInspectable":true,"eventHandlers":{}}},"inspection":
+{"isInspectable":true,"eventHandlers":{}}},"id":"63cee5fc-bcf9-4cce-
+bcfe-d330b69732b9","type":"actionDisplayText","inspection":
+{"isInspectable":true,"eventHandlers":{}}},{"style":
+{"type":"style","display":"flex","alignItems":"center","marginLeft":"auto","
+id":"ff7fc872-bf93-4502-963e-ecfc16771fd8","inspection":
+{"isInspectable":true,"eventHandlers":{}}},"children":[{"value":"fa-trash-
+alt","child":{"id":"Action 3","type":"icon","onClick":
+{"type":"action","id":"c49470ae-b53e-4109-9bb7-
+d85a93cd0fdf","inspection":{"isInspectable":true,"eventHandlers":
+{}},"value":"Delete"},"style":
+{"type":"variable","value":"actionButtonIconStyle","id":"cd0faa93-c489-
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 106/141
+4d7b-bcd9-c8dd3e551dd1","inspection":
+{"isInspectable":true,"eventHandlers":{}}},"inspection":
+{"isInspectable":true,"eventHandlers":{}}},"id":"45097ee1-733e-4faa-
+b049-2e9be8ba402b","type":"constant","inspection":
+{"isInspectable":true,"eventHandlers":{}}},{"value":"fas fa-share-
+alt","child":{"id":"Action 4","type":"icon","onClick":
+{"type":"action","id":"aaba7aa9-9bc5-4ca5-aef0-
+0e834f3b26e2","inspection":{"isInspectable":true,"eventHandlers":
+{}}},"style":
+{"type":"variable","value":"actionButtonIconStyle","id":"441cc05d-
+5e46-4753-bd34-6053ef27f305","inspection":
+{"isInspectable":true,"eventHandlers":{}}},"inspection":
+{"isInspectable":true,"eventHandlers":{}}},"id":"5205cdc0-a69d-4f46-
+9a0a-4cc48950745a","type":"constant","inspection":
+{"isInspectable":true,"eventHandlers":{}}}],"id":"65eb11c1-7b76-4565-
+9284-94d6783d8ec0","type":"container","inspection":
+{"isInspectable":true,"eventHandlers":{}}}],"variables":
+[{"name":"actionButtonTextStyle","value":
+{"type":"style","maxHeight":60,"maxWidth":100,"display":"flex","alignIte
+ms":"center","overflow":"hidden","overflowWrap":"break-
+word","textTransform":"uppercase","fontSize":12,"cursor":"pointer","col
+or":
+{"type":"variable","value":"actionIcon"},"border":5,"padding":8,"transitio
+n":"background 0.8s","hover":{"type":"style","background":
+{"type":"variable","value":"mainBackgroundVariant"},"transition":"back
+ground 0.8s"},"down":{"type":"style","background":
+{"type":"variable","value":"mainBackgroundVariant"},"transition":"back
+ground 0.8s"}}},{"name":"actionButtonIconStyle","value":
+{"type":"style","fontSize":16,"color":
+{"type":"variable","value":"secondaryText"},"border":"50%","cursor":"poi
+nter","padding":8,"transition":"background 0.8s","hover":
+{"type":"style","background":
+{"type":"variable","value":"mainBackgroundVariant"},"transition":"back
+ground 0.8s"},"down":{"type":"style","background":
+{"type":"variable","value":"mainBackgroundVariant"},"transition":"back
+ground 0.8s"}}}],"id":"2a07cf3b-cdec-4e45-90cb-
+f2b2e14dae8d","type":"container","inspection":
+{"isInspectable":true,"eventHandlers":{}}}],"id":"55f59616-6c4f-48c8-
+88cc-1edd8388e4c9","type":"container","inspection":
+{"isInspectable":true,"eventHandlers":{}}}],"name":"detail","variables":
+[{"name":"imageName","value":"https://www.appsheet.com/Content/
+editor/img/empty-media-template.png"},
+{"name":"labelName","value":"Title goes
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 107/141
+here"}],"version":0,"id":"52405288-3f27-45d7-8c68-
+c7d489a76db4","type":"container","inspection":
+{"isInspectable":true,"eventHandlers":
+{}}},"UseCardLayout":false,"DisplayMode":"Normal","MaxNestedRows
+":5,"SlideshowMode":false,"DesktopSplitMode":"Split
+view","UseDesktopMultiColumn":true,"SortBy":
+[],"PrimarySortColumn":null,"IsPrimarySortDescending":false,"Events"
+:[],"Icon":"fa-indent","IconRunnerUps":null,"MenuOrder":1}
+Visible? ALWAYS
+Icon 
+Menu order 1
+View name Mercadillos_Form
+View name Mercadillos_Form
+Created by System
+View type form
+Position ref
+View configuration
+{"ColumnOrder":
+["idMercadillo","Nombre","Fecha","CosteInscripcion","Related
+Ventas","UnidadesVendidas","TotalVentas","TotalBeneficio"],"AutoSav
+e":false,"AutoReopen":false,"FinishView":"**Automatic**","RowKey":"","
+FormStyle":"Automatic","PageStyle":"Automatic","FormFooterStyle":"B
+ottom","MaxNestedRows":5,"AudioInput":false,"Events":
+[{"EventType":"Form Saved","EventAction":"**auto**"}],"Icon":"fa-
+edit","IconRunnerUps":null,"MenuOrder":1}
+Visible? ALWAYS
+Icon 
+Menu order 1
+View name Productos_Detail
+View name Productos_Detail
+Created by System
+View type detail
+ActionType Automatic
+Position ref
+View configuration {"MainSlideshowImageColumn":"**auto**","DetailContentColumn":"**
+none**","HeaderColumns":[],"QuickEditColumns":[],"ColumnOrder":
+[],"ImageStyle":"Fill","Layout":{"style":
+{"type":"style","backgroundColor":"transparent","boxSizing":"border-
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 108/141
+box","height":"100%","id":"18803ca8-6cbf-41d7-b090-
+4509e0201431","inspection":{"isInspectable":true,"eventHandlers":
+{}}},"children":[{"style":{"type":"style","color":
+{"type":"variable","value":"primaryText","id":"10ee5459-af8f-45ac-
+b486-193a9968c81e","inspection":
+{"isInspectable":true,"eventHandlers":
+{}}},"height":"100%","display":"flex","flexDirection":"column","justifyCont
+ent":"space-between","background":
+{"type":"variable","value":"mainContentBackground","id":"847233a2-
+0243-4f05-ac39-9d608383512f","inspection":
+{"isInspectable":true,"eventHandlers":{}}},"fontSize":14,"id":"0ed6623e-
+e7c8-4fc6-af1f-01adbfb245a0","inspection":
+{"isInspectable":true,"eventHandlers":{}}},"children":
+[{"value":"Imagen","child":{"id":"media","type":"image","style":
+{"type":"style","width":"100%","height":194,"borderRadius":"4px 4px 0
+0","objectFit":"cover","id":"3a9f1a4f-a1c1-4e0b-b789-
+dcf4b8995969","inspection":{"isInspectable":true,"eventHandlers":
+{}}},"inspection":{"isInspectable":true,"eventHandlers":
+{}}},"id":"mainImage","type":"binding","inspection":
+{"isInspectable":true,"eventHandlers":{}}},{"style":
+{"type":"style","padding":16,"id":"04c4e9b7-490b-463c-92cd-
+22d07862901c","inspection":{"isInspectable":true,"eventHandlers":
+{}}},"children":[{"value":"Nombre","child":{"id":"label","type":"text","style":
+{"type":"style","fontSize":21,"lineHeight":1.15,"id":"97559953-75d9-
+4b10-919d-c416d183b4c9","inspection":
+{"isInspectable":true,"eventHandlers":{}}},"inspection":
+{"isInspectable":true,"eventHandlers":{}}},"id":"c6a3a013-0faf-4db7-
+8829-39efc6704784","type":"binding","inspection":
+{"isInspectable":true,"eventHandlers":{}}},{"value":"Tipo","child":
+{"id":"subheader","type":"text","style":
+{"type":"style","fontSize":14,"opacity":0.6,"paddingTop":4,"overflow":"hi
+dden","id":"f3a98f74-a901-451b-9b64-8c00e5632325","inspection":
+{"isInspectable":true,"eventHandlers":{}}},"inspection":
+{"isInspectable":true,"eventHandlers":{}}},"id":"bba2d2cb-c355-43aa-
+a0a3-46e89a578400","type":"binding","inspection":
+{"isInspectable":true,"eventHandlers":
+{}}}],"id":"headerTextContainer","type":"container","inspection":
+{"isInspectable":true,"eventHandlers":{}}},{"value":"Precio","child":
+{"id":"description","type":"text","style":
+{"type":"style","fontSize":14,"padding":16,"paddingTop":8,"maxHeight":
+100,"overflow":"hidden","id":"f3a98f74-a901-451b-9b64-
+8c00e5632327","inspection":{"isInspectable":true,"eventHandlers":
+{}}},"inspection":{"isInspectable":true,"eventHandlers":
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 109/141
+{}}},"id":"bba2d2cb-c355-43aa-a0a3-
+46e89a5783d0","type":"binding","inspection":
+{"isInspectable":true,"eventHandlers":{}}},{"style":
+{"type":"style","display":"flex","alignItems":"center","justifyContent":"sp
+ace-
+between","padding":8,"paddingTop":0,"paddingBottom":0,"id":"5fa06ef
+2-6010-4c1e-aa84-668f8ac967aa","inspection":
+{"isInspectable":true,"eventHandlers":{}}},"children":
+[{"value":"Delete","child":{"id":"Action 1","type":"text","onClick":
+{"type":"action","id":"8faa486e-80a1-4bf8-9911-
+ff05823f7018","inspection":{"isInspectable":true,"eventHandlers":
+{}},"value":"Delete"},"style":
+{"type":"variable","value":"actionButtonTextStyle","id":"4fcb9585-70b2-
+4bc0-a407-be6849bea1a7","inspection":
+{"isInspectable":true,"eventHandlers":{}}},"inspection":
+{"isInspectable":true,"eventHandlers":{}}},"id":"c503ebe1-33d7-49e6-
+979d-a4f4a0345863","type":"actionDisplayText","inspection":
+{"isInspectable":true,"eventHandlers":{}}},{"value":"Edit","child":
+{"id":"Action 2","type":"text","onClick":{"type":"action","id":"fb9d48ba-
+a444-4617-8859-7065b058efac","inspection":
+{"isInspectable":true,"eventHandlers":{}},"value":"Edit"},"style":
+{"type":"variable","value":"actionButtonTextStyle","id":"77f5bd38-248e-
+4f75-bf97-18e3b5c54d50","inspection":
+{"isInspectable":true,"eventHandlers":{}}},"inspection":
+{"isInspectable":true,"eventHandlers":{}}},"id":"63cee5fc-bcf9-4cce-
+bcfe-d330b69732b9","type":"actionDisplayText","inspection":
+{"isInspectable":true,"eventHandlers":{}}},{"style":
+{"type":"style","display":"flex","alignItems":"center","marginLeft":"auto","
+id":"ff7fc872-bf93-4502-963e-ecfc16771fd8","inspection":
+{"isInspectable":true,"eventHandlers":{}}},"children":[{"value":"far fa-
+heart","child":{"id":"Action 3","type":"icon","onClick":
+{"type":"action","id":"c49470ae-b53e-4109-9bb7-
+d85a93cd0fdf","inspection":{"isInspectable":true,"eventHandlers":
+{}}},"style":
+{"type":"variable","value":"actionButtonIconStyle","id":"cd0faa93-c489-
+4d7b-bcd9-c8dd3e551dd1","inspection":
+{"isInspectable":true,"eventHandlers":{}}},"inspection":
+{"isInspectable":true,"eventHandlers":{}}},"id":"45097ee1-733e-4faa-
+b049-2e9be8ba402b","type":"constant","inspection":
+{"isInspectable":true,"eventHandlers":{}}},{"value":"fas fa-share-
+alt","child":{"id":"Action 4","type":"icon","onClick":
+{"type":"action","id":"aaba7aa9-9bc5-4ca5-aef0-
+0e834f3b26e2","inspection":{"isInspectable":true,"eventHandlers":
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 110/141
+{}}},"style":
+{"type":"variable","value":"actionButtonIconStyle","id":"441cc05d-
+5e46-4753-bd34-6053ef27f305","inspection":
+{"isInspectable":true,"eventHandlers":{}}},"inspection":
+{"isInspectable":true,"eventHandlers":{}}},"id":"5205cdc0-a69d-4f46-
+9a0a-4cc48950745a","type":"constant","inspection":
+{"isInspectable":true,"eventHandlers":{}}}],"id":"65eb11c1-7b76-4565-
+9284-94d6783d8ec0","type":"container","inspection":
+{"isInspectable":true,"eventHandlers":{}}}],"variables":
+[{"name":"actionButtonTextStyle","value":
+{"type":"style","maxHeight":60,"maxWidth":100,"display":"flex","alignIte
+ms":"center","overflow":"hidden","overflowWrap":"break-
+word","textTransform":"uppercase","fontSize":12,"cursor":"pointer","col
+or":
+{"type":"variable","value":"actionIcon"},"border":5,"padding":8,"transitio
+n":"background 0.8s","hover":{"type":"style","background":
+{"type":"variable","value":"mainBackgroundVariant"},"transition":"back
+ground 0.8s"},"down":{"type":"style","background":
+{"type":"variable","value":"mainBackgroundVariant"},"transition":"back
+ground 0.8s"}}},{"name":"actionButtonIconStyle","value":
+{"type":"style","fontSize":16,"color":
+{"type":"variable","value":"secondaryText"},"border":"50%","cursor":"poi
+nter","padding":8,"transition":"background 0.8s","hover":
+{"type":"style","background":
+{"type":"variable","value":"mainBackgroundVariant"},"transition":"back
+ground 0.8s"},"down":{"type":"style","background":
+{"type":"variable","value":"mainBackgroundVariant"},"transition":"back
+ground 0.8s"}}}],"id":"2a07cf3b-cdec-4e45-90cb-
+f2b2e14dae8d","type":"container","inspection":
+{"isInspectable":true,"eventHandlers":{}}}],"id":"55f59616-6c4f-48c8-
+88cc-1edd8388e4c9","type":"container","inspection":
+{"isInspectable":true,"eventHandlers":{}}}],"name":"detail","variables":
+[{"name":"imageName","value":"https://www.appsheet.com/Content/
+editor/img/empty-media-template.png"},
+{"name":"labelName","value":"Title goes
+here"}],"version":0,"id":"52405288-3f27-45d7-8c68-
+c7d489a76db4","type":"container","inspection":
+{"isInspectable":true,"eventHandlers":
+{}}},"UseCardLayout":false,"DisplayMode":"Automatic","MaxNestedRo
+ws":5,"SlideshowMode":true,"DesktopSplitMode":"Split
+view","UseDesktopMultiColumn":true,"SortBy":
+[],"PrimarySortColumn":null,"IsPrimarySortDescending":false,"Events"
+:[],"Icon":"fa-indent","IconRunnerUps":null,"MenuOrder":1}
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 111/141
+Visible? ALWAYS
+Icon 
+Menu order 1
+View name Productos_Form
+View name Productos_Form
+Created by System
+View type form
+Position ref
+View configuration
+{"ColumnOrder":null,"AutoSave":false,"AutoReopen":false,"FinishView"
+:"**Automatic**","RowKey":"","FormStyle":"Automatic","PageStyle":"Aut
+omatic","FormFooterStyle":"Bottom","MaxNestedRows":5,"AudioInput
+":false,"Events":[{"EventType":"Form
+Saved","EventAction":"**auto**"}],"Icon":"fa-
+edit","IconRunnerUps":null,"MenuOrder":1}
+Visible? ALWAYS
+Icon 
+Menu order 1
+View name Registrar compra
+View name Registrar compra
+Created by App owner
+View type form
+Position ref
+View configuration
+{"ColumnOrder":
+["Fecha","Producto","CantidadComprada","PrecioUnidad"],"AutoSave":f
+alse,"AutoReopen":false,"FinishView":"**Automatic**","RowKey":"","For
+mStyle":"Automatic","PageStyle":"Automatic","FormFooterStyle":"Bott
+om","MaxNestedRows":5,"AudioInput":false,"Events":
+[{"EventType":"Form Saved","EventAction":"**auto**"}],"Icon":"fa-list-
+ul","IconRunnerUps":null,"MenuOrder":1}
+Visible? ALWAYS
+Icon 
+Menu order 1
+View name ResumenVentas_Detail
+View name ResumenVentas_Detail
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 112/141
+Created by System
+View type detail
+ActionType Automatic
+Position ref
+View configuration
+{"MainSlideshowImageColumn":"**auto**","DetailContentColumn":"**
+none**","HeaderColumns":[],"QuickEditColumns":[],"ColumnOrder":
+[],"ImageStyle":"Fill","Layout":null,"UseCardLayout":false,"DisplayMode
+":"Automatic","MaxNestedRows":5,"SlideshowMode":true,"DesktopSpl
+itMode":"Split view","UseDesktopMultiColumn":true,"SortBy":
+[],"PrimarySortColumn":null,"IsPrimarySortDescending":false,"Events"
+:[],"Icon":"fa-indent","IconRunnerUps":null,"MenuOrder":1}
+Visible? ALWAYS
+Icon 
+Menu order 1
+View name ResumenVentas_Form
+View name ResumenVentas_Form
+Created by System
+View type form
+Position ref
+View configuration
+{"ColumnOrder":null,"AutoSave":false,"AutoReopen":false,"FinishView"
+:"**Automatic**","RowKey":"","FormStyle":"Automatic","PageStyle":"Aut
+omatic","FormFooterStyle":"Bottom","MaxNestedRows":5,"AudioInput
+":false,"Events":[{"EventType":"Form
+Saved","EventAction":"**auto**"}],"Icon":"fa-
+edit","IconRunnerUps":null,"MenuOrder":1}
+Visible? ALWAYS
+Icon 
+Menu order 1
+View name ResumenVentas_Inline
+View name ResumenVentas_Inline
+Created by System
+View type table
+Position ref
+View configuration {"ColumnWidth":"Default","EnableQuickEdit":false,"ColumnOrder":
+[],"GroupBy":[],"GroupAggregate":"NONE","SortBy":
+[],"PrimarySortColumn":null,"IsPrimarySortDescending":false,"Events"
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 113/141
+:[{"EventType":"Row Selected","EventAction":"**auto**"}],"Icon":"fa-
+table","IconRunnerUps":null,"MenuOrder":1}
+Visible? ALWAYS
+Icon 
+Menu order 1
+View name Ventas_Detail
+View name Ventas_Detail
+Created by System
+View type detail
+ActionType Automatic
+Position ref
+View configuration
+{"MainSlideshowImageColumn":"**auto**","DetailContentColumn":"**
+none**","HeaderColumns":[],"QuickEditColumns":[],"ColumnOrder":
+[],"ImageStyle":"Fill","Layout":null,"UseCardLayout":false,"DisplayMode
+":"Automatic","MaxNestedRows":5,"SlideshowMode":true,"DesktopSpl
+itMode":"Split view","UseDesktopMultiColumn":true,"SortBy":
+[],"PrimarySortColumn":null,"IsPrimarySortDescending":false,"Events"
+:[],"Icon":"fa-indent","IconRunnerUps":null,"MenuOrder":1}
+Visible? ALWAYS
+Icon 
+Menu order 1
+View name Ventas_Form
+View name Ventas_Form
+Created by System
+View type form
+Position ref
+View configuration
+{"ColumnOrder":
+["Cantidad","Importe","Producto"],"AutoSave":false,"AutoReopen":false,
+"FinishView":"**Automatic**","RowKey":"","FormStyle":"Automatic","Pa
+geStyle":"Automatic","FormFooterStyle":"Bottom","MaxNestedRows":
+5,"AudioInput":false,"Events":[{"EventType":"Form
+Saved","EventAction":"**auto**"}],"Icon":"fa-
+edit","IconRunnerUps":null,"MenuOrder":1}
+Visible? ALWAYS
+Icon 
+Menu order 1
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 114/141
+View name Ventas_Inline
+View name Ventas_Inline
+Created by System
+View type table
+Position ref
+View configuration
+{"ColumnWidth":"Default","EnableQuickEdit":false,"ColumnOrder":
+[],"GroupBy":[],"GroupAggregate":"NONE","SortBy":
+[],"PrimarySortColumn":null,"IsPrimarySortDescending":false,"Events"
+:[{"EventType":"Row Selected","EventAction":"**auto**"}],"Icon":"fa-
+table","IconRunnerUps":null,"MenuOrder":1}
+Visible? ALWAYS
+Icon 
+Menu order 1
+View name VentasEnMercadillo
+View name VentasEnMercadillo
+Created by App owner
+View type card
+ActionType Square Image
+Position ref
+View configuration {"Layout":{"style":{"type":"style","color":
+{"type":"variable","value":"primaryText","id":"7169c5f7-dbee-4c27-
+a791-511f7aa9c621"},"border":
+{"type":"variable","value":"cardBorderStyle","id":"22875894-d378-4a5e-
+ba26-cc49e232c7f8"},"borderRadius":
+{"type":"variable","value":"cardBorderRadius","id":"638bf29a-8af6-
+49ef-97fb-eef622a6d290"},"borderColor":
+{"type":"variable","value":"cardOutline","id":"7e243833-3a2b-4bd5-
+99bd-
+dab0b9148d25"},"display":"flex","flexDirection":"column","background
+Color":
+{"type":"variable","value":"mainContentBackground","id":"bd58227d-
+e947-4c65-889b-1e4e256752e3"},"fontSize":16,"highlightedUpdate":
+{"type":"style","border":
+{"type":"variable","value":"cardBorderStyleSelected","id":"73d1566c-
+5243-46de-b142-0c98c5633209"},"borderColor":
+{"type":"variable","value":"focusColor","id":"bca284e0-1137-4d38-
+950c-2190440dc844"},"id":"1cea6f9c-4b56-403a-9592-
+acffb0481991"},"id":"bf49015e-053c-4635-b2bf-
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 115/141
+a3afe738ec61"},"children":[{"style":
+{"type":"style","display":"flex","alignItems":"center","padding":8,"cursor":
+"pointer","backgroundColor":
+{"type":"variable","value":"mainContentBackground","id":"0cacd2ef-
+e515-4884-8ba4-d900d3144ba4"},"borderRadius":
+{"type":"variable","value":"cardBorderRadius","id":"e48aa4d6-3bbc-
+4bb1-9a1f-dc24b5ef587d"},"transition":"background 0.8s","hover":
+{"type":"style","background":
+{"type":"variable","value":"cardHoverBackground","id":"d220ae1c-
+9b38-45ec-b75a-b03d8592fede"},"boxShadow":
+{"type":"variable","value":"cardHoverShadow","id":"d220ae1c-9b38-
+45ec-b75a-b03d8592fede"},"transition":"background
+0.8s","id":"b10155de-960d-4680-99ab-12250e16f9ee"},"highlighted":
+{"type":"style","background":
+{"type":"variable","value":"tableRowFocus","id":"d220ae1c-9b38-45ec-
+b75a-b03d8592fed3"},"id":"b10155de-960d-4680-99ab-
+12250e16f94e"},"highlightedUpdate":{},"down":
+{"type":"style","background":
+{"type":"variable","value":"cardHoverBackground","id":"21f41bc4-1d8f-
+4212-a6e4-057bd3a8fe0b"},"transition":"background
+0.8s","id":"9205c7a9-35ed-4237-b9c8-
+92d448dc9b11"},"id":"41561a21-2f97-490c-9ca2-
+d0f862f55568"},"children":[{"value":"ImagenProductoVendido","child":
+{"id":"mainImage","type":"image","style":
+{"type":"style","overflow":"hidden","width":70,"height":70,"borderRadius
+":"2px","objectFit":"cover","flex":"0 0
+70px","alignItems":"center","justifyContent":"center","id":"bc54d99e-
+c9a5-4f7c-bc5a-7ff388247636"}},"id":"28502c76-f322-4bee-a3dd-
+3517932edb72","type":"binding"},{"style":
+{"type":"style","display":"flex","flexDirection":"column","marginLeft":16,"
+flexShrink":1,"flexGrow":0,"overflow":"hidden","id":"1b750d3d-d245-
+4672-a22d-e194832d833c"},"children":[{"value":"Producto","child":
+{"id":"labelText","type":"text","style":{"type":"style","id":"507ee6fc-c860-
+445f-880a-c8682b6bd878"},"ignore":false},"id":"3f58a5eb-8102-4b18-
+b70c-81c3721275d3","type":"binding","ignore":false},
+{"value":"Cantidad","child":{"id":"subtitleText","type":"text","style":
+{"type":"style","opacity":0.6,"fontSize":12,"maxHeight":40,"id":"0211ba9
+6-1cee-43ff-a277-dc8081acdd07"},"ignore":false},"id":"af00a19c-
+2913-444c-a6cf-
+f10de41f6961","type":"binding","ignore":false}],"id":"cc8e8bdf-8cbf-
+45fd-9bf6-3cc2da557703","type":"container"},{"style":
+{"type":"style","justifyContent":"flex-
+end","flexGrow":1,"display":"flex","id":"03e8ac10-f699-4b0e-b962-
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 116/141
+c2f9b1beb94e"},"children":[{"style":{"type":"style","color":
+{"id":"ellipsisColor","type":"variable","value":"primaryText"},"id":"6fcbfe
+65-31fe-451d-af80-a5e0c31cf432"},"items":[{"style":
+{"type":"style","id":"771c2038-f239-4584-9a68-
+8e870783c818"},"onClick":{"value":"Delete","id":"8969b669-2c65-
+49b4-8068-f388d058d3af","type":"action","ignore":false},"icon":
+{"type":"constant","value":"fa-trash-alt","id":"e1d07767-257b-4bd2-
+80c4-cfe0773a3bde"},"text":{"value":"Delete","id":"ae79459c-e025-
+4fbd-b8a5-a67c1951a6fa","type":"actionDisplayText"},"id":"cb2b0d60-
+7def-4900-93be-
+de47d032c897","type":"systemAction","ignore":false},{"style":
+{"type":"style","id":"cda5f0a8-23ef-44a3-9ac3-
+4b25a63c857f"},"onClick":{"id":"9164b27a-0247-493c-91fe-
+5759897fd40b","type":"action"},"icon":{"type":"constant","value":"fa-
+edit","id":"c7e376a4-a10d-4255-a9d2-8e38befe4cea"},"text":
+{"value":"Edit","id":"9414fa56-e4d7-4ac7-942d-
+b88c1433122b","type":"actionDisplayText"},"id":"e09dfed3-b0ba-
+4a3a-9d32-f1f34f7b82cb","type":"systemAction","ignore":true},
+{"style":{"type":"style","id":"f62e1913-b059-422a-a0ce-
+c6c1ed939c19"},"onClick":{"id":"b4573f97-1ca8-48ea-bffb-
+e03966b053c9","type":"action"},"icon":{"type":"constant","value":"fa-
+trash-alt","id":"67e305c4-18ca-47c6-b221-38bb5634e8bd"},"text":
+{"value":"Delete","id":"b75ef34e-a76d-4ce7-8ab8-
+5be5dc3ad59b","type":"actionDisplayText"},"id":"c65d949d-a0ae-
+44ef-a7a0-
+1c3be8b647eb","type":"systemAction","ignore":true}],"id":"cdf524ff-
+9a78-4f03-8b01-
+e5bde99d56fc","type":"ellipsisMenu","ignore":false}],"id":"c0bf415a-
+39e0-4d21-990a-f3fc8afae169","type":"container"}],"onClick":
+{"value":"Edit","id":"bfaf6abf-c1a8-4e20-b27f-
+24e65c0da7a1","type":"action","ignore":false},"id":"357a17b3-b454-
+405e-9a77-
+59fd604173ce","type":"container","ignore":false}],"name":"list","variabl
+es":
+[{"name":"imageName","value":"https://www.appsheet.com/Content/
+editor/img/empty-media-template.png"},
+{"name":"labelName","value":"Title goes
+here"}],"version":0,"id":"a89b72c9-97cf-43a7-8b48-
+b3daf0733a83","type":"container","ignore":false},"MainDeckImageCol
+umn":"**auto**","ImageShape":"Square
+Image","PrimaryDeckHeaderColumn":"**auto**","SecondaryDeckHea
+derColumn":"**auto**","DeckSummaryColumn":"**auto**","DeckNeste
+dTableColumn":null,"ShowActionBar":true,"ActionColumns":
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 117/141
+[],"ActionBarEntries":[],"GroupBy":
+[],"GroupAggregate":"NONE","SortBy":
+[],"PrimarySortColumn":null,"IsPrimarySortDescending":false,"Events"
+:[],"Icon":"fa-list-ul","IconRunnerUps":null,"MenuOrder":1}
+Visible? ALWAYS
+Icon 
+Menu order 1
+Format Rules
+Rule name Stock bajo
+Rule name Stock bajo
+Format these columns and
+actions Nombre
+For this data Inventario
+If this condition is true =[Cantidad] < 5
+Rule order 1
+Is this format rule disabled? No
+Like this
+{"textColor":"red","highlightColor":"","textSize":1.0,"underline":
+false,"strikethrough":false,"bold":true,"italic":false,"uppercas
+e":false,"icon":null,"imageSize":null}
+Visible? ALWAYS
+Rule name Stock medio
+Rule name Stock medio
+Format these columns and
+actions Nombre
+For this data Inventario
+If this condition is true =AND([Cantidad] >= 5, [Cantidad] < 10)
+Rule order 1
+Is this format rule disabled? No
+Like this
+{"textColor":"orange","highlightColor":"","textSize":1.0,"underli
+ne":false,"strikethrough":false,"bold":true,"italic":false,"upper
+case":false,"icon":null,"imageSize":null}
+Visible? ALWAYS
+Rule name Stock alto
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 118/141
+Rule name Stock alto
+Format these columns and
+actions Nombre
+For this data Inventario
+If this condition is true =[Cantidad] >= 10
+Rule order 1
+Is this format rule disabled? No
+Like this
+{"textColor":"green","highlightColor":"","textSize":1.0,"underlin
+e":false,"strikethrough":false,"bold":true,"italic":false,"upperc
+ase":false,"icon":null,"imageSize":null}
+Visible? ALWAYS
+Rule name Beneficio negativo
+Rule name Beneficio negativo
+Format these columns and
+actions TotalBeneficio
+For this data Mercadillos
+If this condition is true =[TotalBeneficio] <= 0
+Rule order 1
+Is this format rule disabled? No
+Like this
+{"textColor":"red","highlightColor":"","textSize":1.0,"underline":
+false,"strikethrough":false,"bold":false,"italic":false,"uppercas
+e":false,"icon":null,"imageSize":null}
+Visible? ALWAYS
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 119/141
+Behavior
+Actions
+Action name Export
+Action name Export
+Bulk action? No
+Modifies data? No
+Needs confirmation? No
+Prominence Display_Overlay
+Action order 1
+With these properties
+{"CsvLocale":"en-
+US","Prominence":"Display_Overlay","NeedsConfirmation":false,"
+ConfirmationMessage":"","ModifiesData":false,"BulkApplicable":f
+alse}
+Do this EXPORT_VIEW
+Only if this condition is
+true true
+Disable automatic
+updates? No
+Action icon 
+For a record of this table _Per User Settings
+Does this action apply to
+the whole table? Yes
+Visible? ALWAYS
+Action name Export 2
+Action name Export 2
+Bulk action? No
+Modifies data? No
+Needs confirmation? No
+Prominence Display_Overlay
+Action order 1
+With these properties
+{"CsvLocale":"en-
+US","Prominence":"Display_Overlay","NeedsConfirmation":false,"
+ConfirmationMessage":"","ModifiesData":false,"BulkApplicable":f
+alse}
+Do this EXPORT_VIEW
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 120/141
+Only if this condition is
+true true
+Disable automatic
+updates? No
+Display name Export
+Action icon 
+For a record of this table _Per User Settings
+Does this action apply to
+the whole table? Yes
+Visible? ALWAYS
+Action name Import 2
+Action name Import 2
+Bulk action? No
+Modifies data? No
+Needs confirmation? No
+Prominence Display_Overlay
+Action order 1
+With these properties
+{"CsvLocale":"en-
+US","Prominence":"Display_Overlay","NeedsConfirmation":false,"
+ConfirmationMessage":"","ModifiesData":false,"BulkApplicable":f
+alse}
+Do this EXPORT_VIEW
+Only if this condition is
+true true
+Disable automatic
+updates? No
+Display name Import
+Action icon 
+For a record of this table _Per User Settings
+Does this action apply to
+the whole table? Yes
+Visible? ALWAYS
+Action name Delete
+Action name Delete
+Bulk action? Yes
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 121/141
+Modifies data? Yes
+Needs confirmation? Yes
+Prominence Display_Prominently
+Action order 1
+With these properties
+{"InputParametersUsed":null,"Prominence":"Display_Prominently
+","NeedsConfirmation":true,"ConfirmationMessage":"","ModifiesD
+ata":true,"BulkApplicable":true}
+Do this DELETE_RECORD
+Disable automatic
+updates? No
+Action icon 
+For a record of this table Mercadillos
+Does this action apply to
+the whole table? No
+Visible? ADVANCED
+Action name Edit
+Action name Edit
+Bulk action? No
+Modifies data? Yes
+Needs confirmation? No
+Prominence Display_Overlay
+Action order 1
+With these properties
+{"DesktopBehavior":"Open a form","DesktopEditBehavior":"Edit in
+place","Prominence":"Display_Overlay","NeedsConfirmation":fals
+e,"ConfirmationMessage":"","ModifiesData":true,"BulkApplicable":
+false}
+Do this EDIT_RECORD
+Disable automatic
+updates? No
+Action icon 
+For a record of this table Mercadillos
+Does this action apply to
+the whole table? No
+Visible? ALWAYS
+Action name Delete
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 122/141
+Action name Delete
+Bulk action? Yes
+Modifies data? Yes
+Needs confirmation? Yes
+Prominence Display_Prominently
+Action order 1
+With these properties
+{"InputParametersUsed":null,"Prominence":"Display_Prominently
+","NeedsConfirmation":true,"ConfirmationMessage":"","ModifiesD
+ata":true,"BulkApplicable":true}
+Do this DELETE_RECORD
+Disable automatic
+updates? No
+Action icon 
+For a record of this table Productos
+Does this action apply to
+the whole table? No
+Visible? ADVANCED
+Action name Edit
+Action name Edit
+Bulk action? No
+Modifies data? Yes
+Needs confirmation? No
+Prominence Display_Overlay
+Action order 1
+With these properties
+{"DesktopBehavior":"Open a form","DesktopEditBehavior":"Edit in
+place","Prominence":"Display_Overlay","NeedsConfirmation":fals
+e,"ConfirmationMessage":"","ModifiesData":true,"BulkApplicable":
+false}
+Do this EDIT_RECORD
+Disable automatic
+updates? No
+Action icon 
+For a record of this table Productos
+Does this action apply to
+the whole table? No
+Visible? ALWAYS
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 123/141
+Action name Add
+Action name Add
+Bulk action? Yes
+Modifies data? Yes
+Needs confirmation? No
+Prominence Display_Overlay
+Action order 1
+With these properties {"Prominence":"Display_Overlay","NeedsConfirmation":false,"ConfirmationMessage":"","ModifiesData":true,"BulkApplicable":true}
+Do this ADD_RECORD
+Disable automatic
+updates? No
+Action icon 
+For a record of this table Mercadillos
+Does this action apply to
+the whole table? Yes
+Visible? ALWAYS
+Action name Add
+Action name Add
+Bulk action? Yes
+Modifies data? Yes
+Needs confirmation? No
+Prominence Display_Overlay
+Action order 1
+With these properties {"Prominence":"Display_Overlay","NeedsConfirmation":false,"ConfirmationMessage":"","ModifiesData":true,"BulkApplicable":true}
+Do this ADD_RECORD
+Disable automatic
+updates? No
+Action icon 
+For a record of this table Productos
+Does this action apply to
+the whole table? Yes
+Visible? ALWAYS
+Action name Delete
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 124/141
+Action name Delete
+Bulk action? Yes
+Modifies data? Yes
+Needs confirmation? Yes
+Prominence Display_Prominently
+Action order 1
+With these properties
+{"InputParametersUsed":null,"Prominence":"Display_Prominently
+","NeedsConfirmation":true,"ConfirmationMessage":"","ModifiesD
+ata":true,"BulkApplicable":true}
+Do this DELETE_RECORD
+Disable automatic
+updates? No
+Action icon 
+For a record of this table Ventas
+Does this action apply to
+the whole table? No
+Visible? ADVANCED
+Action name Edit
+Action name Edit
+Bulk action? No
+Modifies data? Yes
+Needs confirmation? No
+Prominence Display_Overlay
+Action order 1
+With these properties
+{"DesktopBehavior":"Open a form","DesktopEditBehavior":"Edit in
+place","Prominence":"Display_Overlay","NeedsConfirmation":fals
+e,"ConfirmationMessage":"","ModifiesData":true,"BulkApplicable":
+false}
+Do this EDIT_RECORD
+Disable automatic
+updates? No
+Action icon 
+For a record of this table Ventas
+Does this action apply to
+the whole table? No
+Visible? ALWAYS
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 125/141
+Action name View Ref (Mercadillo)
+Action name View Ref (Mercadillo)
+Bulk action? No
+Modifies data? No
+Needs confirmation? No
+Prominence Display_Inline
+Action order 1
+With these properties
+{"NavigateTarget":"CONCATENATE(\"#page=detail&table=Merc
+adillos&row=\", ENCODEURL([Mercadillo])
+)","Prominence":"Display_Inline","NeedsConfirmation":false,"Conf
+irmationMessage":"","ModifiesData":false,"BulkApplicable":false}
+Do this NAVIGATE_APP
+Attach to column Mercadillo
+Set this column Mercadillo
+Only if this condition is
+true NOT(ISBLANK([Mercadillo]))
+Disable automatic
+updates? No
+Action icon 
+For a record of this table Ventas
+Does this action apply to
+the whole table? No
+Visible? ALWAYS
+Action name Add
+Action name Add
+Bulk action? Yes
+Modifies data? Yes
+Needs confirmation? No
+Prominence Display_Overlay
+Action order 1
+With these properties {"Prominence":"Display_Overlay","NeedsConfirmation":false,"ConfirmationMessage":"","ModifiesData":true,"BulkApplicable":true}
+Do this ADD_RECORD
+Disable automatic
+updates? No
+Action icon 
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 126/141
+For a record of this table Ventas
+Does this action apply to
+the whole table? Yes
+Visible? ALWAYS
+Action name View Ref (Producto)
+Action name View Ref (Producto)
+Bulk action? No
+Modifies data? No
+Needs confirmation? No
+Prominence Display_Inline
+Action order 1
+With these properties
+{"NavigateTarget":"CONCATENATE(\"#page=detail&table=Produ
+ctos&row=\", ENCODEURL([Producto])
+)","Prominence":"Display_Inline","NeedsConfirmation":false,"Conf
+irmationMessage":"","ModifiesData":false,"BulkApplicable":false}
+Do this NAVIGATE_APP
+Attach to column Producto
+Set this column Producto
+Only if this condition is
+true NOT(ISBLANK([Producto]))
+Disable automatic
+updates? No
+Action icon 
+For a record of this table Ventas
+Does this action apply to
+the whole table? No
+Visible? ALWAYS
+Action name Delete
+Action name Delete
+Bulk action? Yes
+Modifies data? Yes
+Needs confirmation? Yes
+Prominence Display_Prominently
+Action order 1
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 127/141
+With these properties
+{"InputParametersUsed":null,"Prominence":"Display_Prominently
+","NeedsConfirmation":true,"ConfirmationMessage":"","ModifiesD
+ata":true,"BulkApplicable":true}
+Do this DELETE_RECORD
+Disable automatic
+updates? No
+Action icon 
+For a record of this table Inventario
+Does this action apply to
+the whole table? No
+Visible? ADVANCED
+Action name Edit
+Action name Edit
+Bulk action? No
+Modifies data? Yes
+Needs confirmation? No
+Prominence Display_Overlay
+Action order 1
+With these properties
+{"DesktopBehavior":"Open a form","DesktopEditBehavior":"Edit in
+place","Prominence":"Display_Overlay","NeedsConfirmation":fals
+e,"ConfirmationMessage":"","ModifiesData":true,"BulkApplicable":
+false}
+Do this EDIT_RECORD
+Disable automatic
+updates? No
+Action icon 
+For a record of this table Inventario
+Does this action apply to
+the whole table? No
+Visible? ALWAYS
+Action name Add
+Action name Add
+Bulk action? Yes
+Modifies data? Yes
+Needs confirmation? No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 128/141
+Prominence Display_Overlay
+Action order 1
+With these properties {"Prominence":"Display_Overlay","NeedsConfirmation":false,"ConfirmationMessage":"","ModifiesData":true,"BulkApplicable":true}
+Do this ADD_RECORD
+Disable automatic
+updates? No
+Action icon 
+For a record of this table Inventario
+Does this action apply to
+the whole table? Yes
+Visible? ALWAYS
+Action name Open Url (EnlaceCompra)
+Action name Open Url (EnlaceCompra)
+Bulk action? No
+Modifies data? No
+Needs confirmation? No
+Prominence Display_Inline
+Action order 1
+With these properties
+{"NavigateTarget":"
+[EnlaceCompra]","LaunchExternal":false,"Prominence":"Display_I
+nline","NeedsConfirmation":false,"ConfirmationMessage":"","Mod
+ifiesData":false,"BulkApplicable":false}
+Do this NAVIGATE_URL
+Attach to column EnlaceCompra
+Set this column EnlaceCompra
+Only if this condition is
+true NOT(ISBLANK([EnlaceCompra]))
+Disable automatic
+updates? No
+Action icon 
+For a record of this table Inventario
+Does this action apply to
+the whole table? No
+Visible? ALWAYS
+Action name Delete
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 129/141
+Action name Delete
+Bulk action? Yes
+Modifies data? Yes
+Needs confirmation? Yes
+Prominence Display_Prominently
+Action order 1
+With these properties
+{"InputParametersUsed":null,"Prominence":"Display_Prominently
+","NeedsConfirmation":true,"ConfirmationMessage":"","ModifiesD
+ata":true,"BulkApplicable":true}
+Do this DELETE_RECORD
+Disable automatic
+updates? No
+Action icon 
+For a record of this table Compras
+Does this action apply to
+the whole table? No
+Visible? ADVANCED
+Action name Edit
+Action name Edit
+Bulk action? No
+Modifies data? Yes
+Needs confirmation? No
+Prominence Display_Overlay
+Action order 1
+With these properties
+{"DesktopBehavior":"Open a form","DesktopEditBehavior":"Edit in
+place","Prominence":"Display_Overlay","NeedsConfirmation":fals
+e,"ConfirmationMessage":"","ModifiesData":true,"BulkApplicable":
+false}
+Do this EDIT_RECORD
+Disable automatic
+updates? No
+Action icon 
+For a record of this table Compras
+Does this action apply to
+the whole table? No
+Visible? ALWAYS
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 130/141
+Action name View Ref (Producto)
+Action name View Ref (Producto)
+Bulk action? No
+Modifies data? No
+Needs confirmation? No
+Prominence Display_Inline
+Action order 1
+With these properties
+{"NavigateTarget":"CONCATENATE(\"#page=detail&table=Inven
+tario&row=\", ENCODEURL([Producto])
+)","Prominence":"Display_Inline","NeedsConfirmation":false,"Conf
+irmationMessage":"","ModifiesData":false,"BulkApplicable":false}
+Do this NAVIGATE_APP
+Attach to column Producto
+Set this column Producto
+Only if this condition is
+true NOT(ISBLANK([Producto]))
+Disable automatic
+updates? No
+Action icon 
+For a record of this table Compras
+Does this action apply to
+the whole table? No
+Visible? ALWAYS
+Action name Add
+Action name Add
+Bulk action? Yes
+Modifies data? Yes
+Needs confirmation? No
+Prominence Display_Overlay
+Action order 1
+With these properties {"Prominence":"Display_Overlay","NeedsConfirmation":false,"ConfirmationMessage":"","ModifiesData":true,"BulkApplicable":true}
+Do this ADD_RECORD
+Disable automatic
+updates? No
+Action icon 
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 131/141
+For a record of this table Compras
+Does this action apply to
+the whole table? Yes
+Visible? ALWAYS
+Action name Delete
+Action name Delete
+Bulk action? Yes
+Modifies data? Yes
+Needs confirmation? Yes
+Prominence Display_Prominently
+Action order 1
+With these properties
+{"InputParametersUsed":null,"Prominence":"Display_Prominently
+","NeedsConfirmation":true,"ConfirmationMessage":"","ModifiesD
+ata":true,"BulkApplicable":true}
+Do this DELETE_RECORD
+Disable automatic
+updates? No
+Action icon 
+For a record of this table ComponentesProducto
+Does this action apply to
+the whole table? No
+Visible? ADVANCED
+Action name Edit
+Action name Edit
+Bulk action? No
+Modifies data? Yes
+Needs confirmation? No
+Prominence Display_Overlay
+Action order 1
+With these properties
+{"DesktopBehavior":"Open a form","DesktopEditBehavior":"Edit in
+place","Prominence":"Display_Overlay","NeedsConfirmation":fals
+e,"ConfirmationMessage":"","ModifiesData":true,"BulkApplicable":
+false}
+Do this EDIT_RECORD
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 132/141
+Disable automatic
+updates? No
+Action icon 
+For a record of this table ComponentesProducto
+Does this action apply to
+the whole table? No
+Visible? ALWAYS
+Action name View Ref (Producto)
+Action name View Ref (Producto)
+Bulk action? No
+Modifies data? No
+Needs confirmation? No
+Prominence Display_Inline
+Action order 1
+With these properties
+{"NavigateTarget":"CONCATENATE(\"#page=detail&table=Produ
+ctos&row=\", ENCODEURL([Producto])
+)","Prominence":"Display_Inline","NeedsConfirmation":false,"Conf
+irmationMessage":"","ModifiesData":false,"BulkApplicable":false}
+Do this NAVIGATE_APP
+Attach to column Producto
+Set this column Producto
+Only if this condition is
+true NOT(ISBLANK([Producto]))
+Disable automatic
+updates? No
+Action icon 
+For a record of this table ComponentesProducto
+Does this action apply to
+the whole table? No
+Visible? ALWAYS
+Action name Add
+Action name Add
+Bulk action? Yes
+Modifies data? Yes
+Needs confirmation? No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 133/141
+Prominence Display_Overlay
+Action order 1
+With these properties {"Prominence":"Display_Overlay","NeedsConfirmation":false,"ConfirmationMessage":"","ModifiesData":true,"BulkApplicable":true}
+Do this ADD_RECORD
+Disable automatic
+updates? No
+Action icon 
+For a record of this table ComponentesProducto
+Does this action apply to
+the whole table? Yes
+Visible? ALWAYS
+Action name View Ref (Material)
+Action name View Ref (Material)
+Bulk action? No
+Modifies data? No
+Needs confirmation? No
+Prominence Display_Inline
+Action order 1
+With these properties
+{"NavigateTarget":"CONCATENATE(\"#page=detail&table=Inven
+tario&row=\", ENCODEURL([Material])
+)","Prominence":"Display_Inline","NeedsConfirmation":false,"Conf
+irmationMessage":"","ModifiesData":false,"BulkApplicable":false}
+Do this NAVIGATE_APP
+Attach to column Material
+Set this column Material
+Only if this condition is
+true NOT(ISBLANK([Material]))
+Disable automatic
+updates? No
+Action icon 
+For a record of this table ComponentesProducto
+Does this action apply to
+the whole table? No
+Visible? ALWAYS
+Action name Sumar productos de mercadillo
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 134/141
+Action name Sumar productos de mercadillo
+Bulk action? Yes
+Modifies data? Yes
+Needs confirmation? No
+Prominence Display_Prominently
+Action order 1
+With these properties
+{"Assignments":
+[{"ColumnToEdit":"Cantidad","NewColumnValue":"=SUM(\n
+SELECT(\n Ventas[Cantidad],\n AND(\n [Mercadillo] =
+[_THISROW].[Mercadillo],\n [Producto] = [_THISROW].
+[Producto]\n )\n
+)\n)"}],"ColumnToEdit":"Cantidad","NewColumnValue":"=SUM(\n
+SELECT(\n Ventas[Cantidad],\n AND(\n [Mercadillo] =
+[_THISROW].[Mercadillo],\n [Producto] = [_THISROW].
+[Producto]\n )\n
+)\n)","InputParametersUsed":null,"Prominence":"Display_Promin
+ently","NeedsConfirmation":false,"ConfirmationMessage":"","Mod
+ifiesData":true,"BulkApplicable":true}
+Do this SET_COLUMN_VALUE
+Attach to column Cantidad
+Set this column Cantidad
+Only if this condition is
+true true
+Disable automatic
+updates? No
+Action icon 
+For a record of this table Ventas
+Does this action apply to
+the whole table? No
+To this value
+=SUM( SELECT( Ventas[Cantidad], AND( [Mercadillo] =
+[_THISROW].[Mercadillo], [Producto] = [_THISROW].[Producto] )
+) )
+Visible? ALWAYS
+Action name Borrar venta
+Action name Borrar venta
+Bulk action? Yes
+Modifies data? Yes
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 135/141
+Needs confirmation? No
+Prominence Display_Prominently
+Action order 1
+With these properties
+{"InputParametersUsed":null,"Prominence":"Display_Prominently
+","NeedsConfirmation":false,"ConfirmationMessage":"","Modifies
+Data":true,"BulkApplicable":true}
+Do this DELETE_RECORD
+Only if this condition is
+true true
+Disable automatic
+updates? No
+Action icon 
+For a record of this table Ventas
+Does this action apply to
+the whole table? No
+Visible? ADVANCED
+Action name Busca venta previa a eliminar
+Action name Busca venta previa a eliminar
+Bulk action? Yes
+Modifies data? No
+Needs confirmation? No
+Prominence Display_Prominently
+Action order 1
+With these properties
+{"ReferencedTable":"Ventas","ReferencedRows":"=SELECT(\n
+Ventas[idVenta],\n AND(\n [Producto] = [_THISROW].
+[Producto],\n [Mercadillo] = [_THISROW].[Mercadillo],\n
+[Cantidad] = MIN(SELECT(\n Ventas[Cantidad],\n AND(\n
+[Producto] = [_THISROW].[Producto],\n [Mercadillo] =
+[_THISROW].[Mercadillo]\n )\n )\n )\n
+)\n)","ReferencedAction":"Borrar venta","InputAssignments":
+[],"InputParametersUsed":null,"Prominence":"Display_Prominentl
+y","NeedsConfirmation":false,"ConfirmationMessage":"","Modifie
+sData":false,"BulkApplicable":true}
+Do this REF_ACTION
+Only if this condition is
+true
+=COUNT( SELECT( Ventas[idVenta], AND( [Producto]=
+[_THISROW].[Producto], [Mercadillo]=[_THISROW].[Mercadillo] )
+) ) > 1
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 136/141
+Disable automatic
+updates? No
+Action icon 
+For a record of this table Ventas
+Does this action apply to
+the whole table? No
+Visible? ALWAYS
+Action name Delete
+Action name Delete
+Bulk action? Yes
+Modifies data? Yes
+Needs confirmation? Yes
+Prominence Display_Prominently
+Action order 1
+With these properties
+{"InputParametersUsed":null,"Prominence":"Display_Prominently
+","NeedsConfirmation":true,"ConfirmationMessage":"","ModifiesD
+ata":true,"BulkApplicable":true}
+Do this DELETE_RECORD
+Disable automatic
+updates? No
+Action icon 
+For a record of this table ResumenVentas
+Does this action apply to
+the whole table? No
+Visible? ADVANCED
+Action name Edit
+Action name Edit
+Bulk action? No
+Modifies data? Yes
+Needs confirmation? No
+Prominence Display_Overlay
+Action order 1
+With these properties {"DesktopBehavior":"Open a form","DesktopEditBehavior":"Edit in
+place","Prominence":"Display_Overlay","NeedsConfirmation":fals
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 137/141
+e,"ConfirmationMessage":"","ModifiesData":true,"BulkApplicable":
+false}
+Do this EDIT_RECORD
+Disable automatic
+updates? No
+Action icon 
+For a record of this table ResumenVentas
+Does this action apply to
+the whole table? No
+Visible? ALWAYS
+Action name View Ref (Mercadillo)
+Action name View Ref (Mercadillo)
+Bulk action? No
+Modifies data? No
+Needs confirmation? No
+Prominence Display_Inline
+Action order 1
+With these properties
+{"NavigateTarget":"CONCATENATE(\"#page=detail&table=Merc
+adillos&row=\", ENCODEURL([Mercadillo])
+)","Prominence":"Display_Inline","NeedsConfirmation":false,"Conf
+irmationMessage":"","ModifiesData":false,"BulkApplicable":false}
+Do this NAVIGATE_APP
+Attach to column Mercadillo
+Set this column Mercadillo
+Only if this condition is
+true NOT(ISBLANK([Mercadillo]))
+Disable automatic
+updates? No
+Action icon 
+For a record of this table ResumenVentas
+Does this action apply to
+the whole table? No
+Visible? ALWAYS
+Action name View Ref (Producto)
+Action name View Ref (Producto)
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 138/141
+Bulk action? No
+Modifies data? No
+Needs confirmation? No
+Prominence Display_Inline
+Action order 1
+With these properties
+{"NavigateTarget":"CONCATENATE(\"#page=detail&table=Produ
+ctos&row=\", ENCODEURL([Producto])
+)","Prominence":"Display_Inline","NeedsConfirmation":false,"Conf
+irmationMessage":"","ModifiesData":false,"BulkApplicable":false}
+Do this NAVIGATE_APP
+Attach to column Producto
+Set this column Producto
+Only if this condition is
+true NOT(ISBLANK([Producto]))
+Disable automatic
+updates? No
+Action icon 
+For a record of this table ResumenVentas
+Does this action apply to
+the whole table? No
+Visible? ALWAYS
+Action name Add
+Action name Add
+Bulk action? Yes
+Modifies data? Yes
+Needs confirmation? No
+Prominence Display_Overlay
+Action order 1
+With these properties {"Prominence":"Display_Overlay","NeedsConfirmation":false,"ConfirmationMessage":"","ModifiesData":true,"BulkApplicable":true}
+Do this ADD_RECORD
+Disable automatic
+updates? No
+Action icon 
+For a record of this table ResumenVentas
+Does this action apply to
+the whole table? Yes
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 139/141
+Visible? ALWAYS
+Action name Action for Añade entrada a ResumenVentas
+Action name Action for Añade entrada a ResumenVentas
+Bulk action? Yes
+Modifies data? Yes
+Needs confirmation? No
+Prominence Display_Prominently
+Action order 1
+With these properties
+{"ReferencedTable":"ResumenVentas","Assignments":
+[{"ColumnToEdit":"Mercadillo","NewColumnValue":"=
+[Mercadillo]"},{"ColumnToEdit":"Producto","NewColumnValue":"=
+[Producto]"},{"ColumnToEdit":"Cantidad","NewColumnValue":"=
+[Cantidad]"},{"ColumnToEdit":"Ingreso","NewColumnValue":"=
+[Importe]"},
+{"ColumnToEdit":"Coste","NewColumnValue":"=SUM(\n
+SELECT(\n Inventario[PrecioUnidad],\n IN(\n [Nombre],\n
+SELECT(\n ComponentesProducto[Material],\n [Producto] =
+[_THISROW].[Producto]\n )\n )\n )\n) *
+[Cantidad]"}],"InputParametersUsed":null,"Prominence":"Display_
+Prominently","NeedsConfirmation":false,"ConfirmationMessage"
+:"","ModifiesData":true,"BulkApplicable":true}
+Do this ADD_RECORD_TO
+Only if this condition is
+true true
+Disable automatic
+updates? No
+Action icon 
+For a record of this table Ventas
+Does this action apply to
+the whole table? No
+Visible? ALWAYS
+Action name Agrupar ventas del mismo producto Action - 1
+Action name Agrupar ventas del mismo producto Action - 1
+Bulk action? Yes
+Modifies data? Yes
+Needs confirmation? No
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 140/141
+Prominence Display_Prominently
+Action order 1
+With these properties
+{"Assignments":
+[{"ColumnToEdit":"Cantidad","NewColumnValue":"=SUM(\n
+SELECT(\n Ventas[Cantidad],\n AND(\n [Producto] =
+[_THISROW].[Producto],\n [Mercadillo] = [_THISROW].
+[Mercadillo]\n )\n
+)\n)"}],"ColumnToEdit":"Cantidad","NewColumnValue":"=SUM(\n
+SELECT(\n Ventas[Cantidad],\n AND(\n [Producto] =
+[_THISROW].[Producto],\n [Mercadillo] = [_THISROW].
+[Mercadillo]\n )\n
+)\n)","InputParametersUsed":null,"Prominence":"Display_Promin
+ently","NeedsConfirmation":false,"ConfirmationMessage":"","Mod
+ifiesData":true,"BulkApplicable":true}
+Do this SET_COLUMN_VALUE
+Attach to column Cantidad
+Set this column Cantidad
+Only if this condition is
+true true
+Disable automatic
+updates? No
+Action icon 
+For a record of this table Ventas
+Does this action apply to
+the whole table? No
+To this value
+=SUM( SELECT( Ventas[Cantidad], AND( [Producto] =
+[_THISROW].[Producto], [Mercadillo] = [_THISROW].[Mercadillo]
+) ) )
+Visible? ALWAYS
+10/22/26, 3:03 PM Application Documentation
+https://www.appsheet.com/template/appdoc?appId=cb94682e-c38f-4d67-8110-0df054f3cf45 141/141

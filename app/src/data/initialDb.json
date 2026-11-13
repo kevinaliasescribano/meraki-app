@@ -1,0 +1,38 @@
+{
+  "Mercadillos": [
+    { "idMercadillo": "1", "Nombre": "Mercadillo nocturno", "Fecha": "2026-10-20", "CosteInscripcion": 10 },
+    { "idMercadillo": "2", "Nombre": "Monserrat", "Fecha": null, "CosteInscripcion": null },
+    { "idMercadillo": "3", "Nombre": "Turis", "Fecha": null, "CosteInscripcion": null }
+  ],
+  "Productos": [
+    { "idProducto": "Jabon astronauta", "Nombre": "Jabon astronauta", "Peso": 65, "Tipo": "Jabon", "Precio": 4, "Imagen": null },
+    { "idProducto": "Vela flor loto abierta", "Nombre": "Vela flor loto abierta", "Peso": 60, "Tipo": "Cera alto", "Precio": 4, "Imagen": null },
+    { "idProducto": "Resina ovalado", "Nombre": "Resina ovalado", "Peso": 95, "Tipo": "Resina", "Precio": 5, "Imagen": null },
+    { "idProducto": "Vela palomitas", "Nombre": "Vela palomitas", "Peso": 158, "Tipo": "Cera bajo", "Precio": 8, "Imagen": null },
+    { "idProducto": "Jabon arbol navidad", "Nombre": "Jabon arbol navidad", "Peso": 142, "Tipo": "Jabon", "Precio": 5, "Imagen": null },
+    { "idProducto": "Jabon cactus", "Nombre": "Jabon cactus", "Peso": 140, "Tipo": "Jabon", "Precio": 5, "Imagen": null },
+    { "idProducto": "Jabon bola mundo", "Nombre": "Jabon bola mundo", "Peso": 205, "Tipo": "Jabon", "Precio": 7, "Imagen": null },
+    { "idProducto": "Jabon caravana", "Nombre": "Jabon caravana", "Peso": 110, "Tipo": "Jabon", "Precio": 4.5, "Imagen": null },
+    { "idProducto": "Jabon jirafa", "Nombre": "Jabon jirafa", "Peso": null, "Tipo": "Jabon", "Precio": 4, "Imagen": null },
+    { "idProducto": "Jabon mano fatima", "Nombre": "Jabon mano fatima", "Peso": null, "Tipo": "Jabon", "Precio": 4, "Imagen": null }
+  ],
+  "Ventas": [
+    {"idVenta":"dbe4d4dc","Mercadillo":"1","Producto":"Vela palomitas","Cantidad":2,"PrecioVenta":10},
+    {"idVenta":"mw9mykp15x963r5r","Mercadillo":"1","Producto":"Resina ovalado","Cantidad":1,"PrecioVenta":5}
+  ],
+  "Inventario": [
+    { "idObjeto": "1", "Nombre": "Caja blanca 10x10", "StockInicial": 0, "PrecioUnidad": null, "EnlaceCompra": null },
+    { "idObjeto": "2", "Nombre": "Caja marron plana", "StockInicial": 6, "PrecioUnidad": null, "EnlaceCompra": null },
+    { "idObjeto": "3", "Nombre": "Vaso cristal grande", "StockInicial": 20, "PrecioUnidad": null, "EnlaceCompra": null },
+    { "idObjeto": "4", "Nombre": "Caja transparente", "StockInicial": 15, "PrecioUnidad": null, "EnlaceCompra": null },
+    { "idObjeto": "5", "Nombre": "Mecha", "StockInicial": 40, "PrecioUnidad": null, "EnlaceCompra": null }
+  ],
+  "Compras": [],
+  "ComponentesProducto": [
+    { "idComponente": "1", "Producto": "Vela palomitas", "Material": "3", "CantidadPorUnidad": 1 },
+    { "idComponente": "2", "Producto": "Vela palomitas", "Material": "5", "CantidadPorUnidad": 1 }
+  ],
+  "ResumenVentas": [
+    { "idResumenVenta": "5e92c690", "Mercadillo": "1", "Producto": "Vela palomitas", "Cantidad": 2, "Ingreso": 16, "Coste": 0, "Beneficio": 16 }
+  ]
+}

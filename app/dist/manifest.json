@@ -1,0 +1,12 @@
+{
+  "short_name": "Meraki",
+  "name": "Meraki - Gestión de inventario y ventas",
+  "icons": [
+    { "src": "/icon.png", "type": "image/png", "sizes": "1024x1024", "purpose": "any" }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#7b5ea7",
+  "background_color": "#ffffff",
+  "lang": "es"
+}
